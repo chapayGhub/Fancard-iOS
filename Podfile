@@ -1,0 +1,6 @@
+platform :ios,'6.0'
+pod 'JSONKit'
+pod 'Reachability'
+pod 'AFNetworking','~> 1.3.1'
+pod 'MBProgressHUD'
+pod 'Facebook-iOS-SDK'
