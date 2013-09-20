@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8DD3D7DD-FEC8-4C75-9137-9F09C0C9289F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fancard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>61A1B558-9AAA-42E7-89D2-D2138E4A2E3F</key>
+		<string>ssh://github.com/rpplusplus/Fancard-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fancard.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>61A1B558-9AAA-42E7-89D2-D2138E4A2E3F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/rpplusplus/Fancard-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>61A1B558-9AAA-42E7-89D2-D2138E4A2E3F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>61A1B558-9AAA-42E7-89D2-D2138E4A2E3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fancard</string>
+		</dict>
+	</array>
+</dict>
+</plist>
