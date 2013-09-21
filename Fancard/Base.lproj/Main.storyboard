@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="868" y="599"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="7R9-KQ-S3q">
             <objects>
-                <viewController id="cgH-7W-pV5" sceneMemberID="viewController">
+                <viewController id="cgH-7W-pV5" customClass="ETRegisterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBl-Do-tac">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -143,7 +143,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Arrow" width="9" height="15"/>
         <image name="Arrow" width="9" height="15"/>
         <image name="index_background.jpg" width="320" height="480"/>
         <image name="index_box_background" width="258" height="95"/>

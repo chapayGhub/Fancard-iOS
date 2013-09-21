@@ -21,6 +21,11 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,6 +47,8 @@
     
     self.signInBtn.layer.cornerRadius = 5;
     self.signInBtn.layer.masksToBounds = YES;
+    
+    self.title = @"WELCOME";
 }
 
 @end

@@ -1,9 +1,10 @@
 PODS:
   - AFNetworking (1.3.2)
-  - Facebook-iOS-SDK (3.7.1)
+  - Facebook-iOS-SDK (3.8.0)
   - JSONKit (1.5pre)
-  - MBProgressHUD (0.7)
+  - MBProgressHUD (0.8)
   - Reachability (3.1.1)
+  - UIColor-Utilities (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 1.3.1)
@@ -11,12 +12,14 @@ DEPENDENCIES:
   - JSONKit
   - MBProgressHUD
   - Reachability
+  - UIColor-Utilities
 
 SPEC CHECKSUMS:
   AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
-  Facebook-iOS-SDK: bf38d403928f6adb652e2e5ae46253e0c6ba9a19
+  Facebook-iOS-SDK: 55a22fe8bcaacd638cde9014af6b3ee85f4d71fb
   JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
-  MBProgressHUD: 1fd8591a2216d5dec6de24e09187bb03bcbe9946
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   Reachability: 2be6bc2fd2bd31d97f5db33e75e4b29c79e95883
+  UIColor-Utilities: a392783be1b72e5d5ad9ae450ef2280239441bc8
 
-COCOAPODS: 0.23.0
+COCOAPODS: 0.25.0

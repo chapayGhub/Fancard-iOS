@@ -7,12 +7,30 @@
 //
 
 #import "ETAppDelegate.h"
-
+#import <UIColor+Expanded.h>
+#import <AFNetworking.h>
+#import "ETMacro.h"
+#import "UIImage+UIColor.h"
 @implementation ETAppDelegate
+
+- (void) customAppearance
+{
+    if (iOS7)
+    {   
+        [[UINavigationBar appearance] setTintColor: [UIColor colorWithHexString:@"56527c"]];
+    }
+    else
+    {
+        
+        [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] createImageWithColor:[UIColor whiteColor]]
+                                           forBarMetrics:UIBarMetricsDefault];
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self customAppearance];
     return YES;
 }
 							

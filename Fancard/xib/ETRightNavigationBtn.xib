@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="ETRightNavigationBtn">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="33"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KGS-3S-pj9">
+                    <rect key="frame" x="7" y="1" width="63" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="SIGN IN">
+                        <color key="titleColor" red="0.33725490200000002" green="0.32156862749999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clicked:" destination="1" eventType="touchUpInside" id="Rk5-ah-bjf"/>
+                        <action selector="touchCancel:" destination="1" eventType="touchDragOutside" id="BKj-Ja-eT8"/>
+                        <action selector="touchCancel:" destination="1" eventType="touchCancel" id="ETc-NT-1IR"/>
+                        <action selector="touchCancel:" destination="1" eventType="editingDidEndOnExit" id="a6s-dv-kPD"/>
+                        <action selector="touchCancel:" destination="1" eventType="touchUpOutside" id="jKu-kT-bSu"/>
+                        <action selector="touchDown:" destination="1" eventType="touchDragEnter" id="ZqK-gk-ohp"/>
+                        <action selector="touchDown:" destination="1" eventType="touchDown" id="fiz-4t-0Lc"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow_normal" id="Ny9-3h-h0n">
+                    <rect key="frame" x="78" y="9" width="9" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btn" destination="KGS-3S-pj9" id="HLK-cU-hql"/>
+                <outlet property="img" destination="Ny9-3h-h0n" id="Hyh-c3-Mjk"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="right_arrow_normal" width="9" height="16"/>
+    </resources>
+</document>
