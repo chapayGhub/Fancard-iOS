@@ -14,8 +14,7 @@
 @property (nonatomic, weak) IBOutlet    UIImageView*    img;
 @property (nonatomic, strong)           NSString*       txt;
 @property (nonatomic, strong)           void            (^ click)();
+@property (nonatomic, assign)           BOOL            disabled;
 
-- (IBAction) touchDown:(id)sender;
-- (IBAction) touchCancel:(id)sender;
 - (IBAction) clicked:(id)sender;
 @end

@@ -16,20 +16,17 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="SIGN IN">
-                        <color key="titleColor" red="0.33725490200000002" green="0.32156862749999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="0.33725490200000002" green="0.32156862749999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="clicked:" destination="1" eventType="touchUpInside" id="Rk5-ah-bjf"/>
-                        <action selector="touchCancel:" destination="1" eventType="touchDragOutside" id="BKj-Ja-eT8"/>
-                        <action selector="touchCancel:" destination="1" eventType="touchCancel" id="ETc-NT-1IR"/>
-                        <action selector="touchCancel:" destination="1" eventType="editingDidEndOnExit" id="a6s-dv-kPD"/>
-                        <action selector="touchCancel:" destination="1" eventType="touchUpOutside" id="jKu-kT-bSu"/>
-                        <action selector="touchDown:" destination="1" eventType="touchDragEnter" id="ZqK-gk-ohp"/>
-                        <action selector="touchDown:" destination="1" eventType="touchDown" id="fiz-4t-0Lc"/>
+                        <action selector="clicked:" destination="1" eventType="touchUpInside" id="hWM-kf-L4T"/>
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow_normal" id="Ny9-3h-h0n">

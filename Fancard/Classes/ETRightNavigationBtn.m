@@ -10,6 +10,19 @@
 #import <UIColor+Expanded.h>
 @implementation ETRightNavigationBtn
 
+- (void) setDisabled:(BOOL)disabled
+{
+    _disabled = disabled;
+    if (disabled)
+    {
+        [self disabledStatus];
+    }
+    else
+    {
+        [self normalStatus];
+    }
+}
+
 - (void) setTxt:(NSString *)txt
 {
     _txt = txt;
@@ -36,32 +49,28 @@
         self.btn.frame = rect;
     }
     
-    self.layer.cornerRadius = 5;
+    self.layer.cornerRadius = 8;
     self.layer.masksToBounds = YES;
     self.layer.borderColor = [UIColor colorWithHexString:@"56527c"].CGColor;
     self.layer.borderWidth = 1;
 }
 
-- (void) nomalStatus
+- (void) disabledStatus
 {
     self.backgroundColor = [UIColor clearColor];
     [self.img setImage:[UIImage imageNamed:@"right_arrow_normal"]];
+    [self.btn setEnabled:NO];
 }
 
-- (IBAction) touchDown:(id)sender
+- (void) normalStatus
 {
     self.backgroundColor = [UIColor colorWithHexString:@"56527c"];
     [self.img setImage:[UIImage imageNamed:@"right_arrow_highlight"]];
-}
-
-- (IBAction) touchCancel:(id)sender
-{
-    [self nomalStatus];
+    [self.btn setEnabled:YES];
 }
 
 - (IBAction) clicked:(id)sender
 {
-    [self nomalStatus];
     if (self.click)
         self.click();
 }

@@ -26,6 +26,7 @@
     [super viewWillDisappear:animated];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

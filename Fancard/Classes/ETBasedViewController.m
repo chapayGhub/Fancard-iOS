@@ -8,45 +8,29 @@
 
 #import "ETBasedViewController.h"
 #import <UIColor+Expanded.h>
-#import "ETLeftNavigationBtn.h"
-#import "ETRightNavigationBtn.h"
+#import "UIImage+UIColor.h"
 @implementation ETBasedViewController
-
-#pragma mark - UITableView LifeCycle
-
-- (void) viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO
-                                             animated:YES];
-    
-    [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_title_image"]]];
-
-    self.navigationItem.hidesBackButton = YES;
-    
-    [self setLeftBtnWithString:@"WELCOME"];
-    [self setRightBtnWithString:@"SIGN IN"];
-}
 
 - (void) setLeftBtnWithString:(NSString*) str
 {
     UIView* view = self.navigationController.navigationBar;
-    [[view viewWithTag:10] removeFromSuperview];
+    [[view viewWithTag:10
+] removeFromSuperview];
     
     ETLeftNavigationBtn* btn = [[NSBundle mainBundle] loadNibNamed:@"ETLeftNavigationBtn"
                                                              owner:self
                                                            options:nil][0];
     btn.txt = str;
-    btn.tag = 10;
     CGRect rect = btn.frame;
     rect.origin.y += 10;
     rect.origin.x += 5;
     btn.frame = rect;
-    
+    btn.tag = 10;
     [btn setClick:^{
         [self leftBtnClick];
     }];
     [view addSubview:btn];
+    self.leftBtn = btn;
 }
 
 - (void) setRightBtnWithString:(NSString*) str
@@ -58,15 +42,17 @@
                                                               owner:self
                                                             options:nil][0];
     btn.txt = str;
-    btn.tag = 11;
     CGRect rect = btn.frame;
     rect.origin.y += 5;
     rect.origin.x = 320-rect.size.width-5;
     btn.frame = rect;
+    btn.tag = 11;
     [view addSubview:btn];
     [btn setClick:^{
         [self rightBtnClick];
     }];
+    self.rightBtn = btn;
+    self.rightBtn.disabled = YES;
 }
 
 - (void) rightBtnClick
@@ -79,10 +65,43 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void) swipeGesture:(UISwipeGestureRecognizer *)gesture
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+#pragma mark - UITableView LifeCycle
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO
+                                             animated:YES];
+    [self.navigationController.navigationBar setTranslucent:YES];
+    [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_title_image"]]];
+
+    if (iOS7)
+    {
+        [[self.navigationController navigationBar] setTintColor: [UIColor colorWithHexString:@"56527c"]];
+    }
+    else
+    {
+        
+        [[self.navigationController navigationBar] setBackgroundImage:[[UIImage alloc] createImageWithColor:[UIColor whiteColor]]
+                                           forBarMetrics:UIBarMetricsDefault];
+    }
+    self.navigationItem.hidesBackButton = YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"e5e5e5"];
+    self.wantsFullScreenLayout = YES;
     
+    UISwipeGestureRecognizer* swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                action:@selector(swipeGesture:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipe];
 }
 
 @end
