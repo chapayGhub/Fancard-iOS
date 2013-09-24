@@ -130,6 +130,13 @@
         rect.origin.y += 44;
         self.licenceView.frame = rect;
     }
+    
+    self.userName.font = [UIFont fontWithName:kDefaultFont size:20];
+    self.passWord.font = [UIFont fontWithName:kDefaultFont size:20];
+    self.email.font = [UIFont fontWithName:kDefaultFont size:20];
+    self.cameraLabel.font = [UIFont fontWithName:kDefaultFont size:20];
+    self.name.font = [UIFont fontWithName:kDefaultFont size:20];
+    
 }
 
 #pragma mark - UIActionSheet Delegate

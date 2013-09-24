@@ -42,6 +42,8 @@
     [self.forgotPasswordBtn setAttributedTitle:commentString
                                       forState:UIControlStateNormal];
     
+    self.usernameField.font = [UIFont fontWithName:kDefaultFont size:20];
+    self.passwordField.font = [UIFont fontWithName:kDefaultFont size:20];
 }
 
 - (IBAction) forgotPwdBtnClick:(id)sender

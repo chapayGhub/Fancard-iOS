@@ -73,15 +73,27 @@
     CGRect rect = CGRectZero;
     rect.size = size;
     rect.origin.x = 160-rect.size.width/2;
+    self.hintLabel.font = [UIFont fontWithName:kDefaultFont size:16];
+    [self.hintLabel sizeToFit];
+    
+    CGRect r = self.hintLabel.frame;
+    r.origin.x = 160 - r.size.width/2;
+    CGRect re = self.arrowImage.frame;
+    re.origin.x = r.origin.x + r.size.width + 5;
+    
     if (iPhone5)
     {
         rect.origin.y = 510;
+        r.origin.y += 60;
+        re.origin.y += 60;
     }
     else
     {
         rect.origin.y = 450;
     }
     
+    self.hintLabel.frame = r;
+    self.arrowImage.frame = re;
     pageControl.frame = rect;
     pageControl.backgroundColor = [UIColor clearColor];
     [self.view addSubview:pageControl];
@@ -96,9 +108,7 @@
         [self performSegueWithIdentifier:@"signin" sender:nil];
     }
     else
-    {
-        NSLog(@"%f", scrollView.contentOffset.x / 320);
-        
+    {   
         self.pageControl.currentPage = scrollView.contentOffset.x / 320;
     }
 } 

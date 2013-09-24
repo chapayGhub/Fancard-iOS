@@ -79,7 +79,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y7q-AZ-UVx">
-                                        <rect key="frame" x="61" y="13" width="64" height="21"/>
+                                        <rect key="frame" x="61" y="13" width="112" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -104,7 +104,9 @@
                         <outlet property="backgroundView" destination="cat-Ct-JBm" id="EuM-uz-izx"/>
                         <outlet property="boxView" destination="AKr-kN-tYg" id="b9N-gi-lCj"/>
                         <outlet property="regBtn" destination="7gj-og-unY" id="mWA-81-3MY"/>
+                        <outlet property="regLabel" destination="Y7q-AZ-UVx" id="YFe-V0-jkI"/>
                         <outlet property="signInBtn" destination="AMO-eX-rVM" id="vWh-oL-Kxa"/>
+                        <outlet property="signInLabel" destination="uBF-Dw-PL8" id="vHd-r3-q0r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COP-zk-ecs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,8 +183,8 @@
                                     <outlet property="delegate" destination="yJe-Bz-GNG" id="pLK-FS-tIg"/>
                                 </connections>
                             </scrollView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Tutorial for +10 points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qz8-U9-mtN">
-                                <rect key="frame" x="56" y="429" width="209" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Tutorial for +10 points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qz8-U9-mtN">
+                                <rect key="frame" x="0.0" y="429" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.61960784310000006" green="0.49803921569999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>

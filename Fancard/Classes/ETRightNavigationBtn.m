@@ -49,6 +49,8 @@
         self.btn.frame = rect;
     }
     
+    self.btn.titleLabel.font = [UIFont fontWithName:kDefaultFont size:17];
+    
     self.layer.cornerRadius = 8;
     self.layer.masksToBounds = YES;
     self.layer.borderColor = [UIColor colorWithHexString:@"56527c"].CGColor;

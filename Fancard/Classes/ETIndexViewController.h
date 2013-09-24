@@ -15,5 +15,7 @@
 @property (nonatomic, weak) IBOutlet    UIView*         boxView;
 @property (nonatomic, weak) IBOutlet    UIButton*       regBtn;
 @property (nonatomic, weak) IBOutlet    UIButton*       signInBtn;
+@property (nonatomic, weak) IBOutlet    UILabel*        regLabel;
+@property (nonatomic, weak) IBOutlet    UILabel*        signInLabel;
 
 @end

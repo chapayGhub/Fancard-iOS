@@ -11,6 +11,8 @@
 		AD1FAFFD17F0359400F32557 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1FAFFC17F0359400F32557 /* SystemConfiguration.framework */; };
 		AD1FAFFF17F035A200F32557 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */; };
 		AD1FB00217F0394500F32557 /* ETTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1FB00117F0394500F32557 /* ETTutorialViewController.m */; };
+		AD32454517F1113F0092469F /* AccidentalPresidency.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD32454317F1113F0092469F /* AccidentalPresidency.ttf */; };
+		AD32454617F1113F0092469F /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD32454417F1113F0092469F /* Nunito-Regular.ttf */; };
 		AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */; };
 		AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD852C0A17EE34C0003EA787 /* ETLeftNavigationBtn.m */; };
 		AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */; };
@@ -57,6 +59,8 @@
 		AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AD1FB00017F0394500F32557 /* ETTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTutorialViewController.h; path = Classes/ETTutorialViewController.h; sourceTree = "<group>"; };
 		AD1FB00117F0394500F32557 /* ETTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTutorialViewController.m; path = Classes/ETTutorialViewController.m; sourceTree = "<group>"; };
+		AD32454317F1113F0092469F /* AccidentalPresidency.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AccidentalPresidency.ttf; sourceTree = "<group>"; };
+		AD32454417F1113F0092469F /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		AD852C0217EE1984003EA787 /* ETMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETMacro.h; path = Classes/ETMacro.h; sourceTree = "<group>"; };
 		AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETLeftNavigationBtn.xib; path = xib/ETLeftNavigationBtn.xib; sourceTree = "<group>"; };
 		AD852C0917EE34C0003EA787 /* ETLeftNavigationBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETLeftNavigationBtn.h; path = Classes/ETLeftNavigationBtn.h; sourceTree = "<group>"; };
@@ -121,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD32454217F1113F0092469F /* font */ = {
+			isa = PBXGroup;
+			children = (
+				AD32454317F1113F0092469F /* AccidentalPresidency.ttf */,
+				AD32454417F1113F0092469F /* Nunito-Regular.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		AD852C0517EE2C17003EA787 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +184,7 @@
 		ADC47D9B17ECB0FA00322A47 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				AD32454217F1113F0092469F /* font */,
 				ADC47D9C17ECB0FA00322A47 /* index_background.jpg */,
 				ADC47D9D17ECB0FA00322A47 /* index_background@2x.jpg */,
 				ADC47DA617ECB6D200322A47 /* index_background@2x~568.jpg */,
@@ -337,10 +351,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD32454617F1113F0092469F /* Nunito-Regular.ttf in Resources */,
 				AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */,
 				ADF1874817E5F68300E03EF6 /* InfoPlist.strings in Resources */,
 				ADC47DA517ECB32600322A47 /* Images.xcassets in Resources */,
 				ADC47D9E17ECB0FA00322A47 /* index_background.jpg in Resources */,
+				AD32454517F1113F0092469F /* AccidentalPresidency.ttf in Resources */,
 				AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */,
 				ADF1875117E5F68300E03EF6 /* Main.storyboard in Resources */,
 				ADC47DA717ECB6D200322A47 /* index_background@2x~568.jpg in Resources */,

@@ -36,6 +36,8 @@
         rect.origin.y += 5;
         self.btn.frame = rect;
     }
+    
+    self.btn.titleLabel.font = [UIFont fontWithName:kDefaultFont size:17];
 }
 
 - (IBAction) clicked:(id)sender

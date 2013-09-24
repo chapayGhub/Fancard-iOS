@@ -26,6 +26,7 @@
     rect.origin.x += 5;
     btn.frame = rect;
     btn.tag = 10;
+
     [btn setClick:^{
         [self leftBtnClick];
     }];

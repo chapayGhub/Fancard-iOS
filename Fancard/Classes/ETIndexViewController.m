@@ -50,6 +50,9 @@
     self.signInBtn.layer.masksToBounds = YES;
     
     self.title = @"WELCOME";
+    
+    [self.signInLabel setFont:[UIFont fontWithName:kDefaultFont size:17]];
+    [self.regLabel setFont:[UIFont fontWithName:kDefaultFont size:17]];
 }
 
 @end
