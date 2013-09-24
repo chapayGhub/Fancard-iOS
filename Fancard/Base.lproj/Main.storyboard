@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHS-cm-3oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="92"/>
+            <point key="canvasLocation" x="-2678" y="-1788"/>
         </scene>
         <!--Index View Controller-->
         <scene sceneID="N54-xQ-kCf">
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COP-zk-ecs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328" y="93"/>
+            <point key="canvasLocation" x="-2336" y="-1787"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="AiW-ow-1Wi">
@@ -158,11 +158,87 @@
                         <outlet property="forgotPasswordBtn" destination="2t5-f3-1vg" id="uGg-8M-n9Z"/>
                         <outlet property="passwordField" destination="p7g-sg-I1g" id="GFE-kM-OLI"/>
                         <outlet property="usernameField" destination="vTI-Pf-723" id="Mv5-bG-Dqi"/>
+                        <segue destination="yJe-Bz-GNG" kind="push" identifier="tutorial" id="DTp-rY-WHs"/>
+                        <segue destination="X48-ZX-abb" kind="modal" identifier="signin" id="WVp-3W-h8r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRh-Uq-KXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="599"/>
+            <point key="canvasLocation" x="-1796" y="-1281"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="ybG-SL-e2a">
+            <objects>
+                <viewController id="yJe-Bz-GNG" customClass="ETTutorialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="22V-mv-c2A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="nzd-Xg-gdT">
+                                <rect key="frame" x="0.0" y="64" width="320" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yJe-Bz-GNG" id="pLK-FS-tIg"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Tutorial for +10 points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qz8-U9-mtN">
+                                <rect key="frame" x="56" y="429" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.61960784310000006" green="0.49803921569999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" id="bV4-ys-wjI">
+                                <rect key="frame" x="261" y="432" width="9" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZM8-2K-HVo"/>
+                    <connections>
+                        <outlet property="arrowImage" destination="bV4-ys-wjI" id="UgF-gc-ndM"/>
+                        <outlet property="hintLabel" destination="qz8-U9-mtN" id="kvm-01-fSp"/>
+                        <outlet property="scrollView" destination="nzd-Xg-gdT" id="g3l-Bm-teR"/>
+                        <segue destination="X48-ZX-abb" kind="modal" identifier="signin" id="q0O-xJ-kuE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHd-5d-K01" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1247" y="-685"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="afu-YU-juy">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="X48-ZX-abb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uJS-Fy-1cf">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FSg-9j-nbf" kind="relationship" relationship="rootViewController" id="fu5-Be-RhG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7p-iG-8XP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="-1273"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fem-ep-fez">
+            <objects>
+                <viewController id="FSg-9j-nbf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fiN-yh-f9x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qz8-fY-tY8"/>
+                    <connections>
+                        <segue destination="seD-OV-GCE" kind="modal" identifier="signout" id="vHL-rW-4BM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgv-Rf-Rja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="-1273"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="7R9-KQ-S3q">
@@ -332,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gI-Tk-tuy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="-486"/>
+            <point key="canvasLocation" x="-1796" y="-2366"/>
         </scene>
     </scenes>
     <resources>
@@ -351,4 +427,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="q0O-xJ-kuE"/>
+    </inferredMetricsTieBreakers>
 </document>

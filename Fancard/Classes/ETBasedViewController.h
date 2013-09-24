@@ -20,5 +20,5 @@
 - (void) leftBtnClick;
 - (void) setLeftBtnWithString:(NSString*) str;
 - (void) setRightBtnWithString:(NSString*) str;
-- (void) swipeGesture:(UISwipeGestureRecognizer*) gesture;
+- (void) leftSwipeGesture:(UISwipeGestureRecognizer*) gesture;
 @end

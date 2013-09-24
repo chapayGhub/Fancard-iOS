@@ -10,6 +10,7 @@
 		AD1FAFF917EE54B500F32557 /* ETSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1FAFF817EE54B500F32557 /* ETSignInViewController.m */; };
 		AD1FAFFD17F0359400F32557 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1FAFFC17F0359400F32557 /* SystemConfiguration.framework */; };
 		AD1FAFFF17F035A200F32557 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */; };
+		AD1FB00217F0394500F32557 /* ETTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1FB00117F0394500F32557 /* ETTutorialViewController.m */; };
 		AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */; };
 		AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD852C0A17EE34C0003EA787 /* ETLeftNavigationBtn.m */; };
 		AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */; };
@@ -54,6 +55,8 @@
 		AD1FAFF817EE54B500F32557 /* ETSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETSignInViewController.m; path = Classes/ETSignInViewController.m; sourceTree = "<group>"; };
 		AD1FAFFC17F0359400F32557 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AD1FB00017F0394500F32557 /* ETTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTutorialViewController.h; path = Classes/ETTutorialViewController.h; sourceTree = "<group>"; };
+		AD1FB00117F0394500F32557 /* ETTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTutorialViewController.m; path = Classes/ETTutorialViewController.m; sourceTree = "<group>"; };
 		AD852C0217EE1984003EA787 /* ETMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETMacro.h; path = Classes/ETMacro.h; sourceTree = "<group>"; };
 		AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETLeftNavigationBtn.xib; path = xib/ETLeftNavigationBtn.xib; sourceTree = "<group>"; };
 		AD852C0917EE34C0003EA787 /* ETLeftNavigationBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETLeftNavigationBtn.h; path = Classes/ETLeftNavigationBtn.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				ADC47DB017ED195000322A47 /* ETRegisterViewController.m */,
 				AD1FAFF717EE54B500F32557 /* ETSignInViewController.h */,
 				AD1FAFF817EE54B500F32557 /* ETSignInViewController.m */,
+				AD1FB00017F0394500F32557 /* ETTutorialViewController.h */,
+				AD1FB00117F0394500F32557 /* ETTutorialViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */,
 				ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */,
 				ADC47DB117ED195000322A47 /* ETRegisterViewController.m in Sources */,
+				AD1FB00217F0394500F32557 /* ETTutorialViewController.m in Sources */,
 				AD852C1017EE3A75003EA787 /* ETRightNavigationBtn.m in Sources */,
 				ADF1874A17E5F68300E03EF6 /* main.m in Sources */,
 				ADF1874E17E5F68300E03EF6 /* ETAppDelegate.m in Sources */,

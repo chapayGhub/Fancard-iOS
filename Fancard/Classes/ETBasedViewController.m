@@ -65,7 +65,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void) swipeGesture:(UISwipeGestureRecognizer *)gesture
+- (void) leftSwipeGesture:(UISwipeGestureRecognizer *)gesture
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -99,7 +99,7 @@
     self.wantsFullScreenLayout = YES;
     
     UISwipeGestureRecognizer* swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self
-                                                                                action:@selector(swipeGesture:)];
+                                                                                action:@selector(leftSwipeGesture:)];
     swipe.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipe];
 }

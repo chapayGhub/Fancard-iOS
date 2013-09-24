@@ -17,6 +17,8 @@
     [super viewWillAppear:animated];
     [self setRightBtnWithString:@"SIGN IN"];
     [self setLeftBtnWithString:@"WELCOME"];
+    
+    self.rightBtn.disabled = NO;
 }
 
 - (void)viewDidLoad
@@ -39,10 +41,23 @@
     
     [self.forgotPasswordBtn setAttributedTitle:commentString
                                       forState:UIControlStateNormal];
+    
 }
 
 - (IBAction) forgotPwdBtnClick:(id)sender
 {
     
+}
+
+- (void) rightBtnClick
+{
+    if (false)
+    {
+        [self performSegueWithIdentifier:@"signin" sender:nil];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"tutorial" sender:nil];
+    }
 }
 @end
