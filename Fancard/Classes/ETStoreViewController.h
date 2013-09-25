@@ -10,4 +10,6 @@
 
 @interface ETStoreViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet    UIScrollView*   scrollView;
+
 @end

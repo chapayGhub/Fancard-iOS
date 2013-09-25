@@ -25,6 +25,23 @@
 		AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD852C0A17EE34C0003EA787 /* ETLeftNavigationBtn.m */; };
 		AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */; };
 		AD852C1017EE3A75003EA787 /* ETRightNavigationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD852C0F17EE3A75003EA787 /* ETRightNavigationBtn.m */; };
+		AD98881917F3766F00EA3E0B /* ETQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98881817F3766F00EA3E0B /* ETQuestion.m */; };
+		AD98881C17F3791800EA3E0B /* ETTriviaQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98881B17F3791800EA3E0B /* ETTriviaQuestionViewController.m */; };
+		AD98881E17F37DC700EA3E0B /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD98881D17F37DC700EA3E0B /* font.ttf */; };
+		AD98882217F3828C00EA3E0B /* trivia_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98881F17F3828C00EA3E0B /* trivia_background.jpg */; };
+		AD98882317F3828C00EA3E0B /* trivia_background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98882017F3828C00EA3E0B /* trivia_background@2x.jpg */; };
+		AD98882417F3828C00EA3E0B /* trivia_background@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98882117F3828C00EA3E0B /* trivia_background@2x~568.jpg */; };
+		AD98882717F387CA00EA3E0B /* ETTriviaAnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98882617F387CA00EA3E0B /* ETTriviaAnswerViewController.m */; };
+		AD98882A17F38DC300EA3E0B /* ETTriviaResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98882917F38DC300EA3E0B /* ETTriviaResultViewController.m */; };
+		AD98883417F390C500EA3E0B /* trivia_result_timeout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98882B17F390C500EA3E0B /* trivia_result_timeout.jpg */; };
+		AD98883517F390C500EA3E0B /* trivia_result_lose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98882C17F390C500EA3E0B /* trivia_result_lose.jpg */; };
+		AD98883617F390C500EA3E0B /* trivia_result_win.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98882D17F390C500EA3E0B /* trivia_result_win.jpg */; };
+		AD98883717F390C500EA3E0B /* trivia_result_timeout@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98882E17F390C500EA3E0B /* trivia_result_timeout@2x.jpg */; };
+		AD98883817F390C500EA3E0B /* trivia_result_lose@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98882F17F390C500EA3E0B /* trivia_result_lose@2x.jpg */; };
+		AD98883917F390C500EA3E0B /* trivia_result_win@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98883017F390C500EA3E0B /* trivia_result_win@2x.jpg */; };
+		AD98883A17F390C500EA3E0B /* trivia_result_lose@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98883117F390C500EA3E0B /* trivia_result_lose@2x~568.jpg */; };
+		AD98883B17F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98883217F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg */; };
+		AD98883C17F390C500EA3E0B /* trivia_result_win@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98883317F390C500EA3E0B /* trivia_result_win@2x~568.jpg */; };
 		ADC47D9617EC95EF00322A47 /* ETIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47D9517EC95EF00322A47 /* ETIndexViewController.m */; };
 		ADC47D9E17ECB0FA00322A47 /* index_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADC47D9C17ECB0FA00322A47 /* index_background.jpg */; };
 		ADC47D9F17ECB0FA00322A47 /* index_background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADC47D9D17ECB0FA00322A47 /* index_background@2x.jpg */; };
@@ -33,6 +50,14 @@
 		ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DA917ECB80700322A47 /* UIImage+UIColor.m */; };
 		ADC47DAE17ED186700322A47 /* ETBasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DAD17ED186700322A47 /* ETBasedViewController.m */; };
 		ADC47DB117ED195000322A47 /* ETRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DB017ED195000322A47 /* ETRegisterViewController.m */; };
+		ADD9675417F276F300540975 /* ETStoreInnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9675317F276F300540975 /* ETStoreInnerView.m */; };
+		ADD9675617F2770F00540975 /* ETStoreInnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675517F2770F00540975 /* ETStoreInnerView.xib */; };
+		ADD9675917F2797E00540975 /* Franchise-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675817F2797E00540975 /* Franchise-Bold.ttf */; };
+		ADD9675C17F27DA300540975 /* store_box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675A17F27DA300540975 /* store_box.jpg */; };
+		ADD9675D17F27DA300540975 /* store_box@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675B17F27DA300540975 /* store_box@2x.jpg */; };
+		ADD9675F17F2906D00540975 /* store_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675E17F2906D00540975 /* store_demo.jpg */; };
+		ADD9676217F299DF00540975 /* ETRankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9676117F299DF00540975 /* ETRankViewController.m */; };
+		ADD9676517F29CD700540975 /* ETRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9676417F29CD700540975 /* ETRankCell.m */; };
 		ADF1873E17E5F68300E03EF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF1873D17E5F68300E03EF6 /* Foundation.framework */; };
 		ADF1874017E5F68300E03EF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF1873F17E5F68300E03EF6 /* CoreGraphics.framework */; };
 		ADF1874217E5F68300E03EF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF1874117E5F68300E03EF6 /* UIKit.framework */; };
@@ -88,6 +113,27 @@
 		AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETRightNavigationBtn.xib; path = xib/ETRightNavigationBtn.xib; sourceTree = "<group>"; };
 		AD852C0E17EE3A75003EA787 /* ETRightNavigationBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETRightNavigationBtn.h; path = Classes/ETRightNavigationBtn.h; sourceTree = "<group>"; };
 		AD852C0F17EE3A75003EA787 /* ETRightNavigationBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETRightNavigationBtn.m; path = Classes/ETRightNavigationBtn.m; sourceTree = "<group>"; };
+		AD98881717F3766F00EA3E0B /* ETQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETQuestion.h; path = Classes/ETQuestion.h; sourceTree = "<group>"; };
+		AD98881817F3766F00EA3E0B /* ETQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETQuestion.m; path = Classes/ETQuestion.m; sourceTree = "<group>"; };
+		AD98881A17F3791800EA3E0B /* ETTriviaQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTriviaQuestionViewController.h; path = Classes/ETTriviaQuestionViewController.h; sourceTree = "<group>"; };
+		AD98881B17F3791800EA3E0B /* ETTriviaQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTriviaQuestionViewController.m; path = Classes/ETTriviaQuestionViewController.m; sourceTree = "<group>"; };
+		AD98881D17F37DC700EA3E0B /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
+		AD98881F17F3828C00EA3E0B /* trivia_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trivia_background.jpg; sourceTree = "<group>"; };
+		AD98882017F3828C00EA3E0B /* trivia_background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_background@2x.jpg"; sourceTree = "<group>"; };
+		AD98882117F3828C00EA3E0B /* trivia_background@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_background@2x~568.jpg"; sourceTree = "<group>"; };
+		AD98882517F387CA00EA3E0B /* ETTriviaAnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTriviaAnswerViewController.h; path = Classes/ETTriviaAnswerViewController.h; sourceTree = "<group>"; };
+		AD98882617F387CA00EA3E0B /* ETTriviaAnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTriviaAnswerViewController.m; path = Classes/ETTriviaAnswerViewController.m; sourceTree = "<group>"; };
+		AD98882817F38DC300EA3E0B /* ETTriviaResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTriviaResultViewController.h; path = Classes/ETTriviaResultViewController.h; sourceTree = "<group>"; };
+		AD98882917F38DC300EA3E0B /* ETTriviaResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTriviaResultViewController.m; path = Classes/ETTriviaResultViewController.m; sourceTree = "<group>"; };
+		AD98882B17F390C500EA3E0B /* trivia_result_timeout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trivia_result_timeout.jpg; sourceTree = "<group>"; };
+		AD98882C17F390C500EA3E0B /* trivia_result_lose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trivia_result_lose.jpg; sourceTree = "<group>"; };
+		AD98882D17F390C500EA3E0B /* trivia_result_win.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trivia_result_win.jpg; sourceTree = "<group>"; };
+		AD98882E17F390C500EA3E0B /* trivia_result_timeout@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_timeout@2x.jpg"; sourceTree = "<group>"; };
+		AD98882F17F390C500EA3E0B /* trivia_result_lose@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_lose@2x.jpg"; sourceTree = "<group>"; };
+		AD98883017F390C500EA3E0B /* trivia_result_win@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_win@2x.jpg"; sourceTree = "<group>"; };
+		AD98883117F390C500EA3E0B /* trivia_result_lose@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_lose@2x~568.jpg"; sourceTree = "<group>"; };
+		AD98883217F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_timeout@2x~568.jpg"; sourceTree = "<group>"; };
+		AD98883317F390C500EA3E0B /* trivia_result_win@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_win@2x~568.jpg"; sourceTree = "<group>"; };
 		ADC47D9417EC95EF00322A47 /* ETIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETIndexViewController.h; path = Classes/ETIndexViewController.h; sourceTree = "<group>"; };
 		ADC47D9517EC95EF00322A47 /* ETIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETIndexViewController.m; path = Classes/ETIndexViewController.m; sourceTree = "<group>"; };
 		ADC47D9C17ECB0FA00322A47 /* index_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = index_background.jpg; sourceTree = "<group>"; };
@@ -100,6 +146,17 @@
 		ADC47DAD17ED186700322A47 /* ETBasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETBasedViewController.m; path = Classes/ETBasedViewController.m; sourceTree = "<group>"; };
 		ADC47DAF17ED195000322A47 /* ETRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETRegisterViewController.h; path = Classes/ETRegisterViewController.h; sourceTree = "<group>"; };
 		ADC47DB017ED195000322A47 /* ETRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETRegisterViewController.m; path = Classes/ETRegisterViewController.m; sourceTree = "<group>"; };
+		ADD9675217F276F300540975 /* ETStoreInnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETStoreInnerView.h; path = Classes/ETStoreInnerView.h; sourceTree = "<group>"; };
+		ADD9675317F276F300540975 /* ETStoreInnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETStoreInnerView.m; path = Classes/ETStoreInnerView.m; sourceTree = "<group>"; };
+		ADD9675517F2770F00540975 /* ETStoreInnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETStoreInnerView.xib; path = xib/ETStoreInnerView.xib; sourceTree = "<group>"; };
+		ADD9675817F2797E00540975 /* Franchise-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Franchise-Bold.ttf"; sourceTree = "<group>"; };
+		ADD9675A17F27DA300540975 /* store_box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store_box.jpg; sourceTree = "<group>"; };
+		ADD9675B17F27DA300540975 /* store_box@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "store_box@2x.jpg"; sourceTree = "<group>"; };
+		ADD9675E17F2906D00540975 /* store_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store_demo.jpg; sourceTree = "<group>"; };
+		ADD9676017F299DF00540975 /* ETRankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETRankViewController.h; path = Classes/ETRankViewController.h; sourceTree = "<group>"; };
+		ADD9676117F299DF00540975 /* ETRankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETRankViewController.m; path = Classes/ETRankViewController.m; sourceTree = "<group>"; };
+		ADD9676317F29CD700540975 /* ETRankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETRankCell.h; path = Classes/ETRankCell.h; sourceTree = "<group>"; };
+		ADD9676417F29CD700540975 /* ETRankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETRankCell.m; path = Classes/ETRankCell.m; sourceTree = "<group>"; };
 		ADF1873A17E5F68300E03EF6 /* Fancard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fancard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF1873D17E5F68300E03EF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADF1873F17E5F68300E03EF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +205,8 @@
 		AD32454217F1113F0092469F /* font */ = {
 			isa = PBXGroup;
 			children = (
+				AD98881D17F37DC700EA3E0B /* font.ttf */,
+				ADD9675817F2797E00540975 /* Franchise-Bold.ttf */,
 				AD32454317F1113F0092469F /* AccidentalPresidency.ttf */,
 				AD32454417F1113F0092469F /* Nunito-Regular.ttf */,
 			);
@@ -164,6 +223,10 @@
 				AD852C0F17EE3A75003EA787 /* ETRightNavigationBtn.m */,
 				AD32455617F259C70092469F /* ETTabbar.h */,
 				AD32455717F259C70092469F /* ETTabbar.m */,
+				ADD9675217F276F300540975 /* ETStoreInnerView.h */,
+				ADD9675317F276F300540975 /* ETStoreInnerView.m */,
+				ADD9676317F29CD700540975 /* ETRankCell.h */,
+				ADD9676417F29CD700540975 /* ETRankCell.m */,
 			);
 			name = ModelView;
 			sourceTree = "<group>";
@@ -174,6 +237,7 @@
 				AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */,
 				AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */,
 				AD32455917F259DA0092469F /* ETTabbar.xib */,
+				ADD9675517F2770F00540975 /* ETStoreInnerView.xib */,
 			);
 			name = XIB;
 			sourceTree = "<group>";
@@ -185,6 +249,15 @@
 				ADC47DA917ECB80700322A47 /* UIImage+UIColor.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		AD98881617F3764500EA3E0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD98881717F3766F00EA3E0B /* ETQuestion.h */,
+				AD98881817F3766F00EA3E0B /* ETQuestion.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		ADC47D9317EC95BD00322A47 /* Controllers */ = {
@@ -206,6 +279,14 @@
 				AD32455117F236CD0092469F /* ETStoreViewController.m */,
 				AD32455317F248B20092469F /* ETTabbarController.h */,
 				AD32455417F248B20092469F /* ETTabbarController.m */,
+				ADD9676017F299DF00540975 /* ETRankViewController.h */,
+				ADD9676117F299DF00540975 /* ETRankViewController.m */,
+				AD98881A17F3791800EA3E0B /* ETTriviaQuestionViewController.h */,
+				AD98881B17F3791800EA3E0B /* ETTriviaQuestionViewController.m */,
+				AD98882517F387CA00EA3E0B /* ETTriviaAnswerViewController.h */,
+				AD98882617F387CA00EA3E0B /* ETTriviaAnswerViewController.m */,
+				AD98882817F38DC300EA3E0B /* ETTriviaResultViewController.h */,
+				AD98882917F38DC300EA3E0B /* ETTriviaResultViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -220,6 +301,21 @@
 				AD32454A17F224120092469F /* home_background.jpg */,
 				AD32454B17F224120092469F /* home_background@2x.jpg */,
 				AD32454C17F224120092469F /* home_background@2x~568.jpg */,
+				ADD9675E17F2906D00540975 /* store_demo.jpg */,
+				ADD9675A17F27DA300540975 /* store_box.jpg */,
+				ADD9675B17F27DA300540975 /* store_box@2x.jpg */,
+				AD98881F17F3828C00EA3E0B /* trivia_background.jpg */,
+				AD98882017F3828C00EA3E0B /* trivia_background@2x.jpg */,
+				AD98882117F3828C00EA3E0B /* trivia_background@2x~568.jpg */,
+				AD98882B17F390C500EA3E0B /* trivia_result_timeout.jpg */,
+				AD98882C17F390C500EA3E0B /* trivia_result_lose.jpg */,
+				AD98882D17F390C500EA3E0B /* trivia_result_win.jpg */,
+				AD98882E17F390C500EA3E0B /* trivia_result_timeout@2x.jpg */,
+				AD98882F17F390C500EA3E0B /* trivia_result_lose@2x.jpg */,
+				AD98883017F390C500EA3E0B /* trivia_result_win@2x.jpg */,
+				AD98883117F390C500EA3E0B /* trivia_result_lose@2x~568.jpg */,
+				AD98883217F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg */,
+				AD98883317F390C500EA3E0B /* trivia_result_win@2x~568.jpg */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -268,6 +364,7 @@
 				AD852C0517EE2C17003EA787 /* ModelView */,
 				ADC47D9317EC95BD00322A47 /* Controllers */,
 				ADF1874F17E5F68300E03EF6 /* Main.storyboard */,
+				AD98881617F3764500EA3E0B /* Model */,
 				ADC47D9B17ECB0FA00322A47 /* resource */,
 				ADF1874417E5F68300E03EF6 /* Supporting Files */,
 				AD852C0217EE1984003EA787 /* ETMacro.h */,
@@ -384,19 +481,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD32455A17F259DA0092469F /* ETTabbar.xib in Resources */,
+				AD98882417F3828C00EA3E0B /* trivia_background@2x~568.jpg in Resources */,
+				AD98883B17F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg in Resources */,
+				AD98883A17F390C500EA3E0B /* trivia_result_lose@2x~568.jpg in Resources */,
 				AD32454617F1113F0092469F /* Nunito-Regular.ttf in Resources */,
+				AD98883417F390C500EA3E0B /* trivia_result_timeout.jpg in Resources */,
+				AD98883717F390C500EA3E0B /* trivia_result_timeout@2x.jpg in Resources */,
+				AD98883917F390C500EA3E0B /* trivia_result_win@2x.jpg in Resources */,
 				AD32454D17F224120092469F /* home_background.jpg in Resources */,
 				AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */,
+				AD98883517F390C500EA3E0B /* trivia_result_lose.jpg in Resources */,
 				AD32454E17F224120092469F /* home_background@2x.jpg in Resources */,
 				ADF1874817E5F68300E03EF6 /* InfoPlist.strings in Resources */,
+				ADD9675617F2770F00540975 /* ETStoreInnerView.xib in Resources */,
 				ADC47DA517ECB32600322A47 /* Images.xcassets in Resources */,
+				ADD9675D17F27DA300540975 /* store_box@2x.jpg in Resources */,
+				AD98883C17F390C500EA3E0B /* trivia_result_win@2x~568.jpg in Resources */,
+				AD98882217F3828C00EA3E0B /* trivia_background.jpg in Resources */,
 				ADC47D9E17ECB0FA00322A47 /* index_background.jpg in Resources */,
 				AD32454517F1113F0092469F /* AccidentalPresidency.ttf in Resources */,
 				AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */,
+				AD98883817F390C500EA3E0B /* trivia_result_lose@2x.jpg in Resources */,
 				ADF1875117E5F68300E03EF6 /* Main.storyboard in Resources */,
 				ADC47DA717ECB6D200322A47 /* index_background@2x~568.jpg in Resources */,
 				ADC47D9F17ECB0FA00322A47 /* index_background@2x.jpg in Resources */,
+				AD98881E17F37DC700EA3E0B /* font.ttf in Resources */,
+				AD98883617F390C500EA3E0B /* trivia_result_win.jpg in Resources */,
+				ADD9675C17F27DA300540975 /* store_box.jpg in Resources */,
 				AD32454F17F224120092469F /* home_background@2x~568.jpg in Resources */,
+				AD98882317F3828C00EA3E0B /* trivia_background@2x.jpg in Resources */,
+				ADD9675F17F2906D00540975 /* store_demo.jpg in Resources */,
+				ADD9675917F2797E00540975 /* Franchise-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,18 +563,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD98882717F387CA00EA3E0B /* ETTriviaAnswerViewController.m in Sources */,
+				ADD9675417F276F300540975 /* ETStoreInnerView.m in Sources */,
 				ADC47D9617EC95EF00322A47 /* ETIndexViewController.m in Sources */,
 				AD1FAFF917EE54B500F32557 /* ETSignInViewController.m in Sources */,
 				AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */,
 				ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */,
+				ADD9676217F299DF00540975 /* ETRankViewController.m in Sources */,
+				AD98881917F3766F00EA3E0B /* ETQuestion.m in Sources */,
 				ADC47DB117ED195000322A47 /* ETRegisterViewController.m in Sources */,
 				AD1FB00217F0394500F32557 /* ETTutorialViewController.m in Sources */,
 				AD852C1017EE3A75003EA787 /* ETRightNavigationBtn.m in Sources */,
 				AD32454917F219620092469F /* ETHomeViewController.m in Sources */,
+				ADD9676517F29CD700540975 /* ETRankCell.m in Sources */,
 				ADF1874A17E5F68300E03EF6 /* main.m in Sources */,
 				ADF1874E17E5F68300E03EF6 /* ETAppDelegate.m in Sources */,
+				AD98881C17F3791800EA3E0B /* ETTriviaQuestionViewController.m in Sources */,
 				AD32455817F259C70092469F /* ETTabbar.m in Sources */,
 				ADC47DAE17ED186700322A47 /* ETBasedViewController.m in Sources */,
+				AD98882A17F38DC300EA3E0B /* ETTriviaResultViewController.m in Sources */,
 				AD32455217F236CD0092469F /* ETStoreViewController.m in Sources */,
 				AD32455517F248B20092469F /* ETTabbarController.m in Sources */,
 			);

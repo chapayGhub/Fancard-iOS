@@ -7,32 +7,60 @@
 //
 
 #import "ETStoreViewController.h"
+#import "ETStoreInnerView.h"
+#import "UIImage+UIColor.h"
+#import <UIColor+Expanded.h>
 
-@interface ETStoreViewController ()
-
-@end
-
+#define kTotalCnt 6
 @implementation ETStoreViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void) viewWillAppear:(BOOL)animated
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO
+                                             animated:YES];
+    [self.navigationController.navigationBar setTranslucent:YES];
+    [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_title_image"]]];
+    
+    if (iOS7)
+    {
+        [[self.navigationController navigationBar] setTintColor: [UIColor colorWithHexString:@"56527c"]];
     }
-    return self;
+    else
+    {
+        
+        [[self.navigationController navigationBar] setBackgroundImage:[[UIImage alloc] createImageWithColor:[UIColor whiteColor]]
+                                                        forBarMetrics:UIBarMetricsDefault];
+    }
+    self.navigationItem.hidesBackButton = YES;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (iOS7)
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    CGFloat x = 0;
+    for (int i=0; i<kTotalCnt; i++) {
+        ETStoreInnerView* innerView = [[NSBundle mainBundle] loadNibNamed:@"ETStoreInnerView"
+                                                                    owner:self
+                                                                  options:nil][0];
+        CGRect rect = CGRectZero;
+        rect.origin.x = x;
+        rect.size = self.scrollView.frame.size;
+        
+        innerView.totalPages = kTotalCnt;
+        innerView.currentPage = i;
+        
+        innerView.frame = rect;
+        innerView.imageView.image = [UIImage imageNamed:@"store_demo.jpg"];
+        [self.scrollView addSubview:innerView];
+        x += 320;
+    }
+    
+    self.scrollView.contentSize = CGSizeMake(x, 0);
+    
+    self.wantsFullScreenLayout = YES;
 }
 
 @end

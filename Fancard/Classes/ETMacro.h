@@ -19,5 +19,6 @@ otherButtonTitles: nil] show]
 
 #define kDefaultFont @"Nunito-Regular"
 #define kNumberFont  @"AccidentalPresidency"
-
+#define kShopFont    @"Franchise-Bold"
+#define kDigitalFont  @"Digital-7Mono"
 #endif
