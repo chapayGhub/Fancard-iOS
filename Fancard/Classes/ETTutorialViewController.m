@@ -97,6 +97,8 @@
     pageControl.frame = rect;
     pageControl.backgroundColor = [UIColor clearColor];
     [self.view addSubview:pageControl];
+    
+    self.pageControl.userInteractionEnabled= NO;
 }
 
 #pragma mark - UIScrollView Delegate

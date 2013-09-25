@@ -18,4 +18,6 @@ cancelButtonTitle:@"OK" \
 otherButtonTitles: nil] show]
 
 #define kDefaultFont @"Nunito-Regular"
+#define kNumberFont  @"AccidentalPresidency"
+
 #endif
