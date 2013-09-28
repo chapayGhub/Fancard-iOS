@@ -11,6 +11,8 @@
 		AD1FAFFD17F0359400F32557 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1FAFFC17F0359400F32557 /* SystemConfiguration.framework */; };
 		AD1FAFFF17F035A200F32557 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */; };
 		AD1FB00217F0394500F32557 /* ETTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1FB00117F0394500F32557 /* ETTutorialViewController.m */; };
+		AD2BED5317F769D3001ACC33 /* ETNetworkAdapterTestWithSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2BED5217F769D3001ACC33 /* ETNetworkAdapterTestWithSignIn.m */; };
+		AD2BED5617F76FA3001ACC33 /* ETNetworkAdapterTestWithSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2BED5517F76FA3001ACC33 /* ETNetworkAdapterTestWithSignUp.m */; };
 		AD32454517F1113F0092469F /* AccidentalPresidency.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD32454317F1113F0092469F /* AccidentalPresidency.ttf */; };
 		AD32454617F1113F0092469F /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD32454417F1113F0092469F /* Nunito-Regular.ttf */; };
 		AD32454917F219620092469F /* ETHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32454817F219620092469F /* ETHomeViewController.m */; };
@@ -42,6 +44,9 @@
 		AD98883A17F390C500EA3E0B /* trivia_result_lose@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98883117F390C500EA3E0B /* trivia_result_lose@2x~568.jpg */; };
 		AD98883B17F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98883217F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg */; };
 		AD98883C17F390C500EA3E0B /* trivia_result_win@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD98883317F390C500EA3E0B /* trivia_result_win@2x~568.jpg */; };
+		AD98884117F4CA0500EA3E0B /* ETNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98884017F4CA0500EA3E0B /* ETNetworkAdapter.m */; };
+		AD98884417F4CD9200EA3E0B /* ETNetworkAdapterTestWithoutSinIn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98884317F4CD9200EA3E0B /* ETNetworkAdapterTestWithoutSinIn.m */; };
+		AD98884617F4D05000EA3E0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD98884517F4D05000EA3E0B /* libPods.a */; };
 		ADC47D9617EC95EF00322A47 /* ETIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47D9517EC95EF00322A47 /* ETIndexViewController.m */; };
 		ADC47D9E17ECB0FA00322A47 /* index_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADC47D9C17ECB0FA00322A47 /* index_background.jpg */; };
 		ADC47D9F17ECB0FA00322A47 /* index_background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADC47D9D17ECB0FA00322A47 /* index_background@2x.jpg */; };
@@ -69,7 +74,6 @@
 		ADF1875E17E5F68400E03EF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF1873D17E5F68300E03EF6 /* Foundation.framework */; };
 		ADF1875F17E5F68400E03EF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF1874117E5F68300E03EF6 /* UIKit.framework */; };
 		ADF1876717E5F68400E03EF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADF1876517E5F68400E03EF6 /* InfoPlist.strings */; };
-		ADF1876917E5F68400E03EF6 /* FancardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF1876817E5F68400E03EF6 /* FancardTests.m */; };
 		FE7C26FA880941D7A3D81103 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2DB80A46DB4658B94504AF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +96,10 @@
 		AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AD1FB00017F0394500F32557 /* ETTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTutorialViewController.h; path = Classes/ETTutorialViewController.h; sourceTree = "<group>"; };
 		AD1FB00117F0394500F32557 /* ETTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTutorialViewController.m; path = Classes/ETTutorialViewController.m; sourceTree = "<group>"; };
+		AD2BED5117F769D3001ACC33 /* ETNetworkAdapterTestWithSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNetworkAdapterTestWithSignIn.h; sourceTree = "<group>"; };
+		AD2BED5217F769D3001ACC33 /* ETNetworkAdapterTestWithSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNetworkAdapterTestWithSignIn.m; sourceTree = "<group>"; };
+		AD2BED5417F76FA3001ACC33 /* ETNetworkAdapterTestWithSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNetworkAdapterTestWithSignUp.h; sourceTree = "<group>"; };
+		AD2BED5517F76FA3001ACC33 /* ETNetworkAdapterTestWithSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNetworkAdapterTestWithSignUp.m; sourceTree = "<group>"; };
 		AD32454317F1113F0092469F /* AccidentalPresidency.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AccidentalPresidency.ttf; sourceTree = "<group>"; };
 		AD32454417F1113F0092469F /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		AD32454717F219620092469F /* ETHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETHomeViewController.h; path = Classes/ETHomeViewController.h; sourceTree = "<group>"; };
@@ -134,6 +142,11 @@
 		AD98883117F390C500EA3E0B /* trivia_result_lose@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_lose@2x~568.jpg"; sourceTree = "<group>"; };
 		AD98883217F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_timeout@2x~568.jpg"; sourceTree = "<group>"; };
 		AD98883317F390C500EA3E0B /* trivia_result_win@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trivia_result_win@2x~568.jpg"; sourceTree = "<group>"; };
+		AD98883F17F4CA0500EA3E0B /* ETNetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETNetworkAdapter.h; path = Classes/ETNetworkAdapter.h; sourceTree = "<group>"; };
+		AD98884017F4CA0500EA3E0B /* ETNetworkAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETNetworkAdapter.m; path = Classes/ETNetworkAdapter.m; sourceTree = "<group>"; };
+		AD98884217F4CD9200EA3E0B /* ETNetworkAdapterTestWithoutSinIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNetworkAdapterTestWithoutSinIn.h; sourceTree = "<group>"; };
+		AD98884317F4CD9200EA3E0B /* ETNetworkAdapterTestWithoutSinIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNetworkAdapterTestWithoutSinIn.m; sourceTree = "<group>"; };
+		AD98884517F4D05000EA3E0B /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		ADC47D9417EC95EF00322A47 /* ETIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETIndexViewController.h; path = Classes/ETIndexViewController.h; sourceTree = "<group>"; };
 		ADC47D9517EC95EF00322A47 /* ETIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETIndexViewController.m; path = Classes/ETIndexViewController.m; sourceTree = "<group>"; };
 		ADC47D9C17ECB0FA00322A47 /* index_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = index_background.jpg; sourceTree = "<group>"; };
@@ -172,7 +185,6 @@
 		ADF1875C17E5F68400E03EF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		ADF1876417E5F68400E03EF6 /* FancardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FancardTests-Info.plist"; sourceTree = "<group>"; };
 		ADF1876617E5F68400E03EF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ADF1876817E5F68400E03EF6 /* FancardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancardTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD98884617F4D05000EA3E0B /* libPods.a in Frameworks */,
 				ADF1875D17E5F68400E03EF6 /* XCTest.framework in Frameworks */,
 				ADF1875F17E5F68400E03EF6 /* UIKit.framework in Frameworks */,
 				ADF1875E17E5F68400E03EF6 /* Foundation.framework in Frameworks */,
@@ -258,6 +271,16 @@
 				AD98881817F3766F00EA3E0B /* ETQuestion.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		AD98883E17F4C9E100EA3E0B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AD98881617F3764500EA3E0B /* Model */,
+				AD98883F17F4CA0500EA3E0B /* ETNetworkAdapter.h */,
+				AD98884017F4CA0500EA3E0B /* ETNetworkAdapter.m */,
+			);
+			name = Logic;
 			sourceTree = "<group>";
 		};
 		ADC47D9317EC95BD00322A47 /* Controllers */ = {
@@ -344,6 +367,7 @@
 		ADF1873C17E5F68300E03EF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD98884517F4D05000EA3E0B /* libPods.a */,
 				AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */,
 				AD1FAFFC17F0359400F32557 /* SystemConfiguration.framework */,
 				ADF1873D17E5F68300E03EF6 /* Foundation.framework */,
@@ -360,11 +384,11 @@
 			children = (
 				ADF1874C17E5F68300E03EF6 /* ETAppDelegate.h */,
 				ADF1874D17E5F68300E03EF6 /* ETAppDelegate.m */,
+				AD98883E17F4C9E100EA3E0B /* Logic */,
 				AD852C1117EE3BE5003EA787 /* Category */,
 				AD852C0517EE2C17003EA787 /* ModelView */,
 				ADC47D9317EC95BD00322A47 /* Controllers */,
 				ADF1874F17E5F68300E03EF6 /* Main.storyboard */,
-				AD98881617F3764500EA3E0B /* Model */,
 				ADC47D9B17ECB0FA00322A47 /* resource */,
 				ADF1874417E5F68300E03EF6 /* Supporting Files */,
 				AD852C0217EE1984003EA787 /* ETMacro.h */,
@@ -386,8 +410,13 @@
 		ADF1876217E5F68400E03EF6 /* FancardTests */ = {
 			isa = PBXGroup;
 			children = (
-				ADF1876817E5F68400E03EF6 /* FancardTests.m */,
 				ADF1876317E5F68400E03EF6 /* Supporting Files */,
+				AD98884217F4CD9200EA3E0B /* ETNetworkAdapterTestWithoutSinIn.h */,
+				AD98884317F4CD9200EA3E0B /* ETNetworkAdapterTestWithoutSinIn.m */,
+				AD2BED5117F769D3001ACC33 /* ETNetworkAdapterTestWithSignIn.h */,
+				AD2BED5217F769D3001ACC33 /* ETNetworkAdapterTestWithSignIn.m */,
+				AD2BED5417F76FA3001ACC33 /* ETNetworkAdapterTestWithSignUp.h */,
+				AD2BED5517F76FA3001ACC33 /* ETNetworkAdapterTestWithSignUp.m */,
 			);
 			path = FancardTests;
 			sourceTree = "<group>";
@@ -580,6 +609,7 @@
 				ADF1874E17E5F68300E03EF6 /* ETAppDelegate.m in Sources */,
 				AD98881C17F3791800EA3E0B /* ETTriviaQuestionViewController.m in Sources */,
 				AD32455817F259C70092469F /* ETTabbar.m in Sources */,
+				AD98884117F4CA0500EA3E0B /* ETNetworkAdapter.m in Sources */,
 				ADC47DAE17ED186700322A47 /* ETBasedViewController.m in Sources */,
 				AD98882A17F38DC300EA3E0B /* ETTriviaResultViewController.m in Sources */,
 				AD32455217F236CD0092469F /* ETStoreViewController.m in Sources */,
@@ -591,7 +621,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADF1876917E5F68400E03EF6 /* FancardTests.m in Sources */,
+				AD2BED5317F769D3001ACC33 /* ETNetworkAdapterTestWithSignIn.m in Sources */,
+				AD2BED5617F76FA3001ACC33 /* ETNetworkAdapterTestWithSignUp.m in Sources */,
+				AD98884417F4CD9200EA3E0B /* ETNetworkAdapterTestWithoutSinIn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,6 +769,7 @@
 		};
 		ADF1877017E5F68400E03EF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C32BA76A91143BB97D3F69B /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fancard.app/Fancard";

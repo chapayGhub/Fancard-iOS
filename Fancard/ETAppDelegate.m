@@ -32,12 +32,12 @@
     // Override point for customization after application launch.
 //    [self customAppearance];
     //search font
-    for (NSString* str in [UIFont familyNames]) {
-        NSLog(@"Family: %@", str);
-        for (NSString* font in [UIFont fontNamesForFamilyName:str]) {
-            NSLog(@"\t%@", font);
-        }
-    }
+//    for (NSString* str in [UIFont familyNames]) {
+//        NSLog(@"Family: %@", str);
+//        for (NSString* font in [UIFont fontNamesForFamilyName:str]) {
+//            NSLog(@"\t%@", font);
+//        }
+//    }
     return YES;
 }
 							

@@ -17,5 +17,5 @@
 @property (nonatomic, strong)   NSString*   wrongAns2;
 
 - (NSArray*) answers;
-
+- (id) initWithJsonData:(NSData*) data;
 @end

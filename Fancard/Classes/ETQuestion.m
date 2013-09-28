@@ -7,7 +7,7 @@
 //
 
 #import "ETQuestion.h"
-
+#import <JSONKit.h>
 @implementation NSMutableArray (Shuffling)
 
 - (void)shuffle
@@ -34,4 +34,17 @@
     return array;
 }
 
+- (id) initWithJsonData:(NSData *)data
+{
+    if (self = [super init])
+    {
+        NSDictionary* dict = [data objectFromJSONData];
+        self.identifier = dict[@"question_id"];
+        self.question = dict[@"question_title"];
+        self.rightAns = dict[@"question_correct_answer"];
+        self.wrongAns1 = dict[@"question_wrong_answer1"];
+        self.wrongAns2 = dict[@"question_wrong_answer2"];
+    }
+    return self;
+}
 @end

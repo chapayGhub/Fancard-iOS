@@ -1,5 +1,5 @@
 platform :ios,'6.0'
-pod 'JSONKit'
+pod 'JSONKit', :inhibit_warnings => true 
 pod 'Reachability'
 pod 'AFNetworking','~> 1.3.1'
 pod 'MBProgressHUD'
