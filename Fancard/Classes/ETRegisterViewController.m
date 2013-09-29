@@ -10,6 +10,8 @@
 #import "UIImage+UIColor.h"
 #import "ETNetworkAdapter.h"
 #import <MBProgressHUD.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "ETAppDelegate.h"
 @implementation ETRegisterViewController
 
 - (void) rightBtnClick
@@ -33,6 +35,7 @@
                                                        });
                                                        
                                                    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                       NSLog(@"%@", [error localizedDescription]);
                                                        [hud setLabelText:@"error"];
                                                        [hud hide:1 afterDelay:1];
                                                    }];
@@ -54,9 +57,58 @@
 
 - (IBAction) facebookBtnClick:(id)sender
 {
+    if( ![[FBSession activeSession] isOpen] )
+    {
+        __block MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.labelText = @"Loading..";
+        
+        [FBSession openActiveSessionWithReadPermissions:@[@"basic_info", @"email"]
+                                              allowLoginUI:YES
+                                         completionHandler:^(FBSession *session, FBSessionState status, NSError *error)
+        {
+            if( error )
+            {
+                hud.labelText = @"Load Failed";
+                [hud hide:YES afterDelay:1];
+            }
+            else
+            {
+                NSLog(@"%@", [FBSession activeSession].accessTokenData.accessToken);
+                [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+                    if (!error) {
+                        self.name.text = user.name;
+                        self.email.text = [user objectForKey:@"email"];
+                        
+                        [[ETNetworkAdapter sharedAdapter] getFacebookAvatarWithID:user.id
+                                                                          success:^(AFHTTPRequestOperation *operation, id responseObject)
+                        {
+                            
+                            self.avatarImage = [UIImage imageWithData:responseObject];
+                            [hud hide:YES];
+                            self.cameraLabel.text = @"Photo Add";
+                            [self checkFin];
+                        } failure:^(AFHTTPRequestOperation *operation, NSError *error)
+                        {
+                            hud.labelText = @"Avatar Load Failed";
+                            [hud hide:YES afterDelay:1];
+                        }];
+                    }
+                    else
+                    {
+                        hud.labelText = @"Load Failed";
+                        [hud hide:YES afterDelay:1];
+                    }
+                }];
+            }
+        }];
+    }
     
 }
 
+- (void)updateView {
+    // get the app delegate, so that we can reference the session property
+    
+}
 - (IBAction) cameraBtnClick:(id) sender
 {
     [self closeKeyBoard:nil];
@@ -177,7 +229,6 @@
     self.email.font = [UIFont fontWithName:kDefaultFont size:20];
     self.cameraLabel.font = [UIFont fontWithName:kDefaultFont size:20];
     self.name.font = [UIFont fontWithName:kDefaultFont size:20];
-    
 }
 
 #pragma mark - UIActionSheet Delegate

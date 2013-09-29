@@ -59,5 +59,8 @@
 - (void) downloadAvatarWithUserName:(NSString*) userName
                             success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                             failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+- (void) getFacebookAvatarWithID:(NSString*) fb_id
+                         success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+                         failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
 @end

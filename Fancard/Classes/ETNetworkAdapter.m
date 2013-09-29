@@ -9,7 +9,7 @@
 #import "ETNetworkAdapter.h"
 
 static ETNetworkAdapter* _sharedAdapter = nil;
-#define kServerBasedURL @"http://localhost:8888/fancard/index.php"//@"http://starlinet.com/Fancard/index.php"
+#define kServerBasedURL @"http://starlinet.com/Fancard/index.php"
 
 @implementation ETNetworkAdapter
 
@@ -159,6 +159,18 @@ static ETNetworkAdapter* _sharedAdapter = nil;
                             failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure
 {
     NSString* url = [NSString stringWithFormat:@"%@%@.jpg", kServerURL, userName];
+    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString: url]];
+    AFHTTPRequestOperation* operation = [client HTTPRequestOperationWithRequest:request
+                                                                        success:success
+                                                                        failure:failure];
+    [self.downloadQueue addOperation:operation];
+}
+
+- (void) getFacebookAvatarWithID:(NSString *)fb_id
+                         success:(void (^)(AFHTTPRequestOperation *, id))success
+                         failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure
+{
+    NSString* url = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture", fb_id];
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString: url]];
     AFHTTPRequestOperation* operation = [client HTTPRequestOperationWithRequest:request
                                                                         success:success

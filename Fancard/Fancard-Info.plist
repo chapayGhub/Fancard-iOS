@@ -43,5 +43,18 @@
 		<string>Franchise-Bold.ttf</string>
 		<string>font.ttf</string>
 	</array>
+	<key>FacebookAppID</key>
+	<string>725619350787490</string>
+	<key>FacebookDisplayName</key>
+	<string>Fancard</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb725619350787490</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
