@@ -1,7 +1,6 @@
 PODS:
   - AFNetworking (1.3.3)
   - DACircularProgress (2.1.0)
-  - Facebook-iOS-SDK (3.8.0)
   - FXPageControl (1.2.1)
   - JSONKit (1.5pre)
   - MBProgressHUD (0.8)
@@ -12,7 +11,6 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 1.3.1)
   - DACircularProgress
-  - Facebook-iOS-SDK
   - FXPageControl
   - JSONKit
   - MBProgressHUD
@@ -23,7 +21,6 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 0700ec7a58c36ad217173e167f6e4df7270df66b
   DACircularProgress: 8c8f20c8dffdd647fbf570ddecbc2b1b59da5888
-  Facebook-iOS-SDK: 55a22fe8bcaacd638cde9014af6b3ee85f4d71fb
   FXPageControl: e4158b398fd9e1b97705154a162c366de831311d
   JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622

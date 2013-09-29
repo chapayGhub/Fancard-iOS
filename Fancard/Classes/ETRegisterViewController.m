@@ -25,15 +25,24 @@
                                                   trueName:self.name.text
                                                     avatar:self.avatarImage
                                                    success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                                       [hud setMode:MBProgressHUDModeText];
-                                                       [hud setLabelText:@"Successful"];
-                                                       [hud hide:YES afterDelay:1];
-                                                       double delayInSeconds = 1.0;
-                                                       dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-                                                       dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-                                                           [self performSegueWithIdentifier:@"signin" sender:Nil];
-                                                       });
-                                                       
+                                                       NSDictionary* dict =[responseObject objectFromJSONData];
+                                                       if ([dict[@"msg"] isEqualToString:@"OK"])
+                                                       {
+                                                           [hud setMode:MBProgressHUDModeText];
+                                                           [hud setLabelText:@"Successful"];
+                                                           [hud hide:YES afterDelay:1];
+                                                           double delayInSeconds = 1.0;
+                                                           dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                                                           dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                               [self performSegueWithIdentifier:@"signin" sender:Nil];
+                                                           });
+                                                       }
+                                                       else
+                                                       {
+                                                           hud.labelText = @"Username already exists";
+                                                           [hud setMode:MBProgressHUDModeText];
+                                                           [hud hide:1 afterDelay:1];
+                                                       }
                                                    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                                        NSLog(@"%@", [error localizedDescription]);
                                                        [hud setLabelText:@"error"];
