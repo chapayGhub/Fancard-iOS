@@ -8,10 +8,50 @@
 
 #import "ETRegisterViewController.h"
 #import "UIImage+UIColor.h"
-
+#import "ETNetworkAdapter.h"
+#import <MBProgressHUD.h>
 @implementation ETRegisterViewController
 
+- (void) rightBtnClick
+{
+    __block MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [hud setLabelText:@"Loading..."];
+    
+    [[ETNetworkAdapter sharedAdapter] registerWithUsername:self.userName.text
+                                                  password:self.passWord.text
+                                                     email:self.email.text
+                                                  trueName:self.name.text
+                                                    avatar:self.avatarImage
+                                                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                       [hud setMode:MBProgressHUDModeText];
+                                                       [hud setLabelText:@"Successful"];
+                                                       [hud hide:YES afterDelay:1];
+                                                       double delayInSeconds = 1.0;
+                                                       dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                                                       dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                           [self performSegueWithIdentifier:@"signin" sender:Nil];
+                                                       });
+                                                       
+                                                   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                       [hud setLabelText:@"error"];
+                                                       [hud hide:1 afterDelay:1];
+                                                   }];
+}
+
 #pragma mark - IBAction
+
+- (IBAction) checkFin
+{
+    self.rightBtn.disabled = YES;
+    if (self.userName.text.length == 0) return;
+    if (self.passWord.text.length == 0) return;
+    if (self.email.text.length == 0) return;
+    if (!self.avatarImage) return;
+    if (self.name.text.length == 0) return;
+    
+    self.rightBtn.disabled = NO;
+}
+
 - (IBAction) facebookBtnClick:(id)sender
 {
     
@@ -86,6 +126,7 @@
     [super viewWillAppear:animated];
     [self setLeftBtnWithString:@"WELCOME"];
     [self setRightBtnWithString:@"SIGN UP"];
+    self.rightBtn.disabled = YES;
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -185,6 +226,7 @@
 {
     self.avatarImage = image;
     self.cameraLabel.text = @"Photo Add";
+    [self checkFin];
     [picker dismissModalViewControllerAnimated:YES];
 }
 

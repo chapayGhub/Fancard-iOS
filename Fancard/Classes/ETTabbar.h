@@ -19,5 +19,5 @@
 - (IBAction) leftBtnClick:(id)sender;
 - (IBAction) rightBtnClick:(id)sender;
 - (IBAction) middleBtnClick:(id)sender;
-
+- (void) refreshTabbarScore;
 @end

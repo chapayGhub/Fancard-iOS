@@ -14,6 +14,7 @@
     AFHTTPClient*   client;
 }
 
+@property (nonatomic, strong)   NSOperationQueue*   downloadQueue;
 
 + (instancetype) sharedAdapter;
 - (void) checkUsernameWith:(NSString*) usrname
@@ -55,4 +56,8 @@
                        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 - (void) getCompleteVideosWithsuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                               failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+- (void) downloadAvatarWithUserName:(NSString*) userName
+                            success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+                            failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
 @end

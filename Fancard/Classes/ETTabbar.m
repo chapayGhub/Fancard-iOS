@@ -9,7 +9,7 @@
 #import "ETTabbar.h"
 #import <QuartzCore/QuartzCore.h>
 #import <UIColor+Expanded.h>
-
+#import "ETGlobal.h"
 @implementation ETTabbar
 
 - (void) awakeFromNib
@@ -23,6 +23,16 @@
     
     self.scoreLabel.adjustsFontSizeToFitWidth = YES;
     self.scoreLabel.font = [UIFont fontWithName:kDefaultFont size:22];
+    
+    self.avatarView.image = [ETGlobal sharedGlobal].avatar;
+    [self refreshTabbarScore];
+    
+    
+}
+
+- (void) refreshTabbarScore
+{
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d pts", [ETGlobal sharedGlobal].userPointsTotal];
 }
 
 - (IBAction) leftBtnClick:(id)sender

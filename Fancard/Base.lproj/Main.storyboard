@@ -131,6 +131,9 @@
                                 <color key="textColor" red="0.61960784313725492" green="0.49803921568627452" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkDone:" destination="dlt-6E-PSV" eventType="editingChanged" id="05L-Za-lWk"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" id="p7g-sg-I1g">
                                 <rect key="frame" x="85" y="142" width="178" height="30"/>
@@ -138,6 +141,9 @@
                                 <color key="textColor" red="0.33725490200000002" green="0.32156862749999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="checkDone:" destination="dlt-6E-PSV" eventType="editingChanged" id="YBO-CH-wa5"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2t5-f3-1vg">
                                 <rect key="frame" x="94" y="201" width="133" height="32"/>
@@ -726,6 +732,9 @@ after 6 seconds on “TriviaStart” ?</string>
                                 <color key="textColor" red="0.61960784310000006" green="0.49803921569999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkFin" destination="cgH-7W-pV5" eventType="editingChanged" id="GlW-AU-CCb"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" id="TBD-nL-3vw">
                                 <rect key="frame" x="85" y="142" width="178" height="30"/>
@@ -733,6 +742,9 @@ after 6 seconds on “TriviaStart” ?</string>
                                 <color key="textColor" red="0.33725490200000002" green="0.32156862749999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="checkFin" destination="cgH-7W-pV5" eventType="editingChanged" id="5A7-Ka-qpX"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reg_box" id="SJZ-cj-6wc">
                                 <rect key="frame" x="28" y="206" width="265" height="198"/>
@@ -775,13 +787,19 @@ after 6 seconds on “TriviaStart” ?</string>
                                 <color key="textColor" red="0.61960784310000006" green="0.49803921569999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkFin" destination="cgH-7W-pV5" eventType="editingChanged" id="RdX-tx-q1q"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="3" id="b27-a4-jc6">
-                                <rect key="frame" x="91" y="360" width="172" height="30"/>
+                                <rect key="frame" x="91" y="358" width="172" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.61960784310000006" green="0.49803921569999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkFin" destination="cgH-7W-pV5" eventType="editingChanged" id="NO7-ku-xet"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oq3-jc-kLc">
                                 <rect key="frame" x="91" y="314" width="172" height="26"/>
@@ -872,6 +890,7 @@ after 6 seconds on “TriviaStart” ?</string>
                         <outlet property="privacyPolicy" destination="iWW-AU-dZg" id="NyQ-Ml-qmQ"/>
                         <outlet property="termsOfService" destination="Lpw-IN-aZL" id="phq-VS-gys"/>
                         <outlet property="userName" destination="pxo-2c-b5f" id="mZf-KJ-9wE"/>
+                        <segue destination="dlt-6E-PSV" kind="push" identifier="signin" id="dTb-DG-hyU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gI-Tk-tuy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -898,7 +917,8 @@ after 6 seconds on “TriviaStart” ?</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Lip-PR-cmT"/>
         <segue reference="HKi-7Y-gSb"/>
+        <segue reference="dTb-DG-hyU"/>
+        <segue reference="Lip-PR-cmT"/>
     </inferredMetricsTieBreakers>
 </document>

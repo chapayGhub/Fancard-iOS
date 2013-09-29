@@ -9,7 +9,8 @@
 #import "ETNetworkAdapter.h"
 
 static ETNetworkAdapter* _sharedAdapter = nil;
-#define kServerBasedURL @"http://localhost:8888/fancard/index.php"
+#define kServerBasedURL @"http://starlinet.com/Fancard/index.php"
+#define kServerURL @"http://starlinet.com/Fancard/"
 
 @implementation ETNetworkAdapter
 
@@ -154,11 +155,25 @@ static ETNetworkAdapter* _sharedAdapter = nil;
              failure:failure];
 }
 
+- (void) downloadAvatarWithUserName:(NSString *)userName
+                            success:(void (^)(AFHTTPRequestOperation *, id))success
+                            failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure
+{
+    NSString* url = [NSString stringWithFormat:@"%@%@.jpg", kServerURL, userName];
+    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString: url]];
+    AFHTTPRequestOperation* operation = [client HTTPRequestOperationWithRequest:request
+                                                                        success:success
+                                                                        failure:failure];
+    [self.downloadQueue addOperation:operation];
+}
+
 - (id) init
 {
     if ( self = [super init] )
     {
         client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:kServerBasedURL]];
+        self.downloadQueue = [[NSOperationQueue alloc] init];
+        self.downloadQueue.maxConcurrentOperationCount = 5;
     }
     return self;
 }

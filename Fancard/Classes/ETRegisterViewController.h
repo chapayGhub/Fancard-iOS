@@ -27,4 +27,5 @@
 - (IBAction) privacyPolicyBtnClick:(id)sender;
 - (IBAction) termsOfServiceBtnClick:(id) sender;
 - (IBAction) closeKeyBoard:(id)sender;
+- (IBAction) checkFin;
 @end

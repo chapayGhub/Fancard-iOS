@@ -7,12 +7,15 @@
 //
 
 #import "ETBasedViewController.h"
+#import <MBProgressHUD.h>
 
 @interface ETSignInViewController : ETBasedViewController
 
 @property (nonatomic, weak) IBOutlet    UITextField*    usernameField;
 @property (nonatomic, weak) IBOutlet    UITextField*    passwordField;
 @property (nonatomic, weak) IBOutlet    UIButton*       forgotPasswordBtn;
-
+@property (nonatomic, assign)           NSInteger       requestCnt;
+@property (nonatomic, weak)             MBProgressHUD*  hud;
 - (IBAction) forgotPwdBtnClick:(id)sender;
+- (IBAction) checkDone:(id)sender;
 @end

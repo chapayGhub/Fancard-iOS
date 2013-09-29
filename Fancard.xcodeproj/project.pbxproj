@@ -55,6 +55,7 @@
 		ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DA917ECB80700322A47 /* UIImage+UIColor.m */; };
 		ADC47DAE17ED186700322A47 /* ETBasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DAD17ED186700322A47 /* ETBasedViewController.m */; };
 		ADC47DB117ED195000322A47 /* ETRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DB017ED195000322A47 /* ETRegisterViewController.m */; };
+		ADD6D2D317F7AA6700B82824 /* ETGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2D217F7AA6700B82824 /* ETGlobal.m */; };
 		ADD9675417F276F300540975 /* ETStoreInnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9675317F276F300540975 /* ETStoreInnerView.m */; };
 		ADD9675617F2770F00540975 /* ETStoreInnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675517F2770F00540975 /* ETStoreInnerView.xib */; };
 		ADD9675917F2797E00540975 /* Franchise-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675817F2797E00540975 /* Franchise-Bold.ttf */; };
@@ -159,6 +160,8 @@
 		ADC47DAD17ED186700322A47 /* ETBasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETBasedViewController.m; path = Classes/ETBasedViewController.m; sourceTree = "<group>"; };
 		ADC47DAF17ED195000322A47 /* ETRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETRegisterViewController.h; path = Classes/ETRegisterViewController.h; sourceTree = "<group>"; };
 		ADC47DB017ED195000322A47 /* ETRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETRegisterViewController.m; path = Classes/ETRegisterViewController.m; sourceTree = "<group>"; };
+		ADD6D2D117F7AA6700B82824 /* ETGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETGlobal.h; path = Classes/ETGlobal.h; sourceTree = "<group>"; };
+		ADD6D2D217F7AA6700B82824 /* ETGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETGlobal.m; path = Classes/ETGlobal.m; sourceTree = "<group>"; };
 		ADD9675217F276F300540975 /* ETStoreInnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETStoreInnerView.h; path = Classes/ETStoreInnerView.h; sourceTree = "<group>"; };
 		ADD9675317F276F300540975 /* ETStoreInnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETStoreInnerView.m; path = Classes/ETStoreInnerView.m; sourceTree = "<group>"; };
 		ADD9675517F2770F00540975 /* ETStoreInnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETStoreInnerView.xib; path = xib/ETStoreInnerView.xib; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 				AD98881617F3764500EA3E0B /* Model */,
 				AD98883F17F4CA0500EA3E0B /* ETNetworkAdapter.h */,
 				AD98884017F4CA0500EA3E0B /* ETNetworkAdapter.m */,
+				ADD6D2D117F7AA6700B82824 /* ETGlobal.h */,
+				ADD6D2D217F7AA6700B82824 /* ETGlobal.m */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -597,6 +602,7 @@
 				ADC47D9617EC95EF00322A47 /* ETIndexViewController.m in Sources */,
 				AD1FAFF917EE54B500F32557 /* ETSignInViewController.m in Sources */,
 				AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */,
+				ADD6D2D317F7AA6700B82824 /* ETGlobal.m in Sources */,
 				ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */,
 				ADD9676217F299DF00540975 /* ETRankViewController.m in Sources */,
 				AD98881917F3766F00EA3E0B /* ETQuestion.m in Sources */,

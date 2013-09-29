@@ -9,7 +9,7 @@
 #import "ETHomeViewController.h"
 #import "UIImage+UIColor.h"
 #import <UIColor+Expanded.h>
-
+#import "ETGlobal.h"
 @implementation ETHomeViewController
 
 #pragma mark - IBAction
@@ -25,12 +25,12 @@
 
 - (void) refreshData
 {
-    self.group1CompleteLabel.text = @"0";
-    self.group1UnlockedLabel.text = @"3";
+    self.group1CompleteLabel.text = [NSString stringWithFormat:@"%d", [ETGlobal sharedGlobal].userNumberWatchedvideo];
+    self.group1UnlockedLabel.text = [NSString stringWithFormat:@"%d", [ETGlobal sharedGlobal].videoUnlockCnt];
     self.group1LockedLabel.text = @"20";
 
-    self.group2CompleteLabel.text = @"2";
-    self.group2UnlockedLabel.text = @"10";
+    self.group2CompleteLabel.text = [NSString stringWithFormat:@"%d", [ETGlobal sharedGlobal].userNumberCorrectanswer];
+    self.group2UnlockedLabel.text = [NSString stringWithFormat:@"%d", [ETGlobal sharedGlobal].quizUnlockCnt];
     self.group2LockedLabel.text = @"100";
 
     self.group3CompleteLabel.text = @"1";
