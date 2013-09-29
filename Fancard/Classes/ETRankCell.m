@@ -22,6 +22,7 @@
     self.rankLabel.font = [UIFont fontWithName:kDefaultFont size:17];
     self.scoreLabel.font = [UIFont fontWithName:kDefaultFont size:17];;
     self.usernameLabel.font = [UIFont fontWithName:kDefaultFont size:17];
+    [self.usernameLabel  setAdjustsFontSizeToFitWidth: YES];
 }
 
 @end

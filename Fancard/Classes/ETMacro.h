@@ -21,4 +21,5 @@ otherButtonTitles: nil] show]
 #define kNumberFont  @"AccidentalPresidency"
 #define kShopFont    @"Franchise-Bold"
 #define kDigitalFont  @"Digital-7Mono"
+#define kServerURL @"http://starlinet.com/Fancard/"
 #endif

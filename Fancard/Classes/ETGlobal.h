@@ -20,6 +20,8 @@
 @property (nonatomic, assign)   NSInteger       quizUnlockCnt;
 @property (nonatomic, strong)   NSMutableArray* totalRank;
 @property (nonatomic, strong)   NSMutableArray* todayRank;
+@property (nonatomic, strong)   NSMutableArray* allVideos;
+@property (nonatomic, strong)   NSMutableArray* watchedVideos;
 
 + (ETGlobal*) sharedGlobal;
 @end

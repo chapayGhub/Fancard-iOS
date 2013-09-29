@@ -218,7 +218,7 @@
         <!--Tabbar Controller-->
         <scene sceneID="m0y-OC-bwq">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="yWr-fN-5Hx" customClass="ETTabbarController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tarbarViewController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yWr-fN-5Hx" customClass="ETTabbarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="I56-dv-0am"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="NJm-sA-QKK">
@@ -314,6 +314,9 @@
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="group1BtnClick:" destination="vwv-0q-a6E" eventType="touchUpInside" id="JL8-JY-3fD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -412,6 +415,7 @@
                         <outlet property="viewGroup2" destination="5qu-nC-IP9" id="oS4-5o-mH6"/>
                         <outlet property="viewGroup3" destination="C6V-Ib-flE" id="z2P-Nm-nYf"/>
                         <segue destination="seD-OV-GCE" kind="modal" identifier="signout" id="gMZ-r8-pFi"/>
+                        <segue destination="Ys9-wW-IHs" kind="modal" identifier="practice" id="bp8-z2-It2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEK-KU-oVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -431,7 +435,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8F2-CP-BSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-1281"/>
+            <point key="canvasLocation" x="860" y="-1681"/>
         </scene>
         <!--Trivia Question View Controller-->
         <scene sceneID="t3V-lT-NQJ">
@@ -461,7 +465,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDu-hr-q7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="-1281"/>
+            <point key="canvasLocation" x="1254" y="-1681"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wHk-RW-a95">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Ys9-wW-IHs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XAa-LG-zqK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tbC-Fh-hOy" kind="relationship" relationship="rootViewController" id="1aA-bt-4vX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aht-dB-IQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-962"/>
+        </scene>
+        <!--Practice View Controller-->
+        <scene sceneID="8mM-Nq-cbX">
+            <objects>
+                <viewController id="tbC-Fh-hOy" customClass="ETPracticeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cM-ry-2Jp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="c5J-cU-5Le">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NrX-Xe-MJc"/>
+                    <connections>
+                        <outlet property="scrollView" destination="c5J-cU-5Le" id="6GY-kO-Ure"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLi-ZP-agL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="-962"/>
         </scene>
         <!--Trivia Answer View Controller-->
         <scene sceneID="A07-eZ-e8g">
@@ -564,7 +608,7 @@ after 6 seconds on “TriviaStart” ?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAS-he-It7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="-1281"/>
+            <point key="canvasLocation" x="1644" y="-1681"/>
         </scene>
         <!--Trivia Result View Controller-->
         <scene sceneID="7w2-93-dhy">
@@ -589,7 +633,7 @@ after 6 seconds on “TriviaStart” ?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hs3-eq-UQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1927" y="-1281"/>
+            <point key="canvasLocation" x="2007" y="-1681"/>
         </scene>
         <!--Rank View Controller-->
         <scene sceneID="aqS-mN-udE">
@@ -623,7 +667,7 @@ after 6 seconds on “TriviaStart” ?</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AqJ-rq-2OT">
-                                                    <rect key="frame" x="105" y="19" width="108" height="21"/>
+                                                    <rect key="frame" x="105" y="19" width="146" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -659,6 +703,9 @@ after 6 seconds on “TriviaStart” ?</string>
                                     <segment title="Today"/>
                                 </segments>
                                 <color key="tintColor" red="0.61960784310000006" green="0.49803921569999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segValueChanged" destination="CvZ-SX-hPN" eventType="valueChanged" id="s6F-hC-Nq6"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -900,8 +947,6 @@ after 6 seconds on “TriviaStart” ?</string>
     </scenes>
     <resources>
         <image name="Arrow" width="9" height="15"/>
-        <image name="Arrow" width="9" height="15"/>
-        <image name="Arrow" width="9" height="15"/>
         <image name="home_background.jpg" width="320" height="416"/>
         <image name="index_background.jpg" width="320" height="480"/>
         <image name="index_box_background" width="258" height="95"/>
@@ -910,7 +955,6 @@ after 6 seconds on “TriviaStart” ?</string>
         <image name="reg_box" width="265" height="198"/>
         <image name="reg_camera" width="22" height="17"/>
         <image name="reg_facebook" width="243" height="48"/>
-        <image name="signin_box" width="263" height="101"/>
         <image name="signin_box" width="263" height="101"/>
         <image name="trivia_background.jpg" width="320" height="416"/>
     </resources>

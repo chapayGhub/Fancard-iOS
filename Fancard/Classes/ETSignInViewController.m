@@ -162,7 +162,8 @@
                                                     [self getQuizAndVideosStatus];
                                                 }
                                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                                    
+                                                    [hud setLabelText:@"Authorization failed"];
+                                                    [hud hide:1 afterDelay:1];
                                                 }];
 }
 @end

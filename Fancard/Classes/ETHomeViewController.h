@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "ETStoreViewController.h"
+#import <MBProgressHUD.h>
 @interface ETHomeViewController : UIViewController<UIAlertViewDelegate>
 
 @property (nonatomic, weak) IBOutlet    UIImageView*    background;
@@ -30,4 +31,8 @@
 @property (nonatomic, weak) IBOutlet    UILabel*        group3UnlockedLabel;
 @property (nonatomic, weak) IBOutlet    UILabel*        group3LockedLabel;
 
+@property (atomic, assign)              NSInteger       requestCnt;
+@property (nonatomic, weak)             MBProgressHUD*  hud;
+
+- (IBAction) group1BtnClick:(id)sender;
 @end

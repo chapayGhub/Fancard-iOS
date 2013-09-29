@@ -10,10 +10,98 @@
 #import "UIImage+UIColor.h"
 #import <UIColor+Expanded.h>
 #import "ETGlobal.h"
+#import "ETNetworkAdapter.h"
+#import <MBProgressHUD.h>
+#import "ETVideo.h"
 @implementation ETHomeViewController
 
 #pragma mark - IBAction
+- (void) requestAllFin
+{
+    [self.hud hide:YES];
+    [self performSegueWithIdentifier:@"practice" sender:nil];
+}
 
+- (void) getAllVideos
+{
+    [[ETNetworkAdapter sharedAdapter] getAllVideosWithsuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary* dict = [responseObject objectFromJSONData];
+        
+        for (int i=0; i<dict.allKeys.count; i++) {
+            NSString* key = [NSString stringWithFormat:@"%d", i];
+            if (dict[key])
+            {
+                [[ETGlobal sharedGlobal].allVideos addObject:[[ETVideo alloc] initWithDict:dict[key]]];
+            }
+        }
+
+        @synchronized(self)
+        {
+            self.requestCnt = self.requestCnt - 1;
+            if (_requestCnt == 0)
+            {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self requestAllFin];
+                });
+            }
+        }
+    }
+                                                      failure:nil];
+}
+
+- (void) getWatchedVideos
+{
+    [[ETNetworkAdapter sharedAdapter] getCompleteVideosWithsuccess:^(AFHTTPRequestOperation *operation, id responseObject)  {
+        NSDictionary* dict = [responseObject objectFromJSONData];
+        for (int i=0; i<dict.allKeys.count; i++) {
+            NSString* key = [NSString stringWithFormat:@"%d", i];
+            if (dict[key])
+            {
+                [[ETGlobal sharedGlobal].watchedVideos addObject:dict[key][@"video_id"]];
+            }
+        }
+        @synchronized(self)
+        {
+            self.requestCnt = self.requestCnt - 1;
+            if (_requestCnt == 0)
+            {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self requestAllFin];
+                });
+            }
+        }
+
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error);
+    }];
+}
+- (IBAction) group1BtnClick:(id)sender
+{
+    self.requestCnt = 0;
+    self.hud = nil;
+    if (![ETGlobal sharedGlobal].watchedVideos)
+    {
+        self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        self.hud.labelText = @"loading...";
+        
+        [ETGlobal sharedGlobal].watchedVideos = [NSMutableArray array];
+        self.requestCnt ++;
+        [self getWatchedVideos];
+    }
+    
+    if (![ETGlobal sharedGlobal].allVideos)
+    {
+        if (!self.hud)
+        {
+            self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            self.hud.labelText = @"loading...";
+        }
+        
+        [ETGlobal sharedGlobal].allVideos = [NSMutableArray array];
+        self.requestCnt ++;
+        [self getAllVideos];
+    }
+}
 - (void) rightBtnClick
 {
     [[[UIAlertView alloc] initWithTitle:@"Attention"

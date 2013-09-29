@@ -16,4 +16,6 @@
 @property (nonatomic, weak) UILabel*                        rightLabel;
 @property (nonatomic, assign)           BOOL                todayRank;
 
+- (IBAction) segValueChanged;
+
 @end
