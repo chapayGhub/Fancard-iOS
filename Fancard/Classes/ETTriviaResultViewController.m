@@ -7,7 +7,10 @@
 //
 
 #import "ETTriviaResultViewController.h"
-
+#import "ETNetworkAdapter.h"
+#import <MBProgressHUD.h>
+#import <JSONKit.h>
+#import "ETGlobal.h"
 @implementation ETTriviaResultViewController
 
 - (void) viewWillAppear:(BOOL)animated
@@ -77,6 +80,26 @@
     s.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:s];
     self.swipe = s;
+    
+    MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view
+                                              animated:YES];
+    [hud setLabelText:@"Sync With Server"];
+    [[ETNetworkAdapter sharedAdapter] answerQuestionWithQuestionID:[self.question.identifier integerValue]
+                                                            answer:self.answer
+                                                           success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                               NSDictionary* dict = [responseObject objectFromJSONData];
+                                                               NSInteger t = [dict[@"addCredit"] integerValue];
+                                                               if (t != 0)
+                                                               {
+                                                                   [ETGlobal sharedGlobal].userPointsToday = [ETGlobal sharedGlobal].userPointsToday + t;
+                                                                   [ETGlobal sharedGlobal].userPointsTotal = [ETGlobal sharedGlobal].userPointsTotal + t;
+                                                                   [ETGlobal sharedGlobal].userNumberCorrectanswer = [ETGlobal sharedGlobal].userNumberCorrectanswer + 1;
+                                                               }
+                                                               [hud hide:YES];
+                                                           }
+                                                           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                               
+                                                           }];
 }
 
 

@@ -92,7 +92,7 @@
     
     __block BOOL flag = true;
     [adapter loginWithUsername:@"txx"
-                      password:@"12345"
+                      password:@"123"
                        success:^(AFHTTPRequestOperation *operation, id responseObject){
                            NSDictionary* dict = [responseObject objectFromJSONData];
                            XCTAssertEqualObjects(dict[@"msg"], @"OK", @"response ERROR");

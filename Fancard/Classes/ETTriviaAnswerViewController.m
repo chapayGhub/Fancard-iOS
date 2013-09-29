@@ -69,7 +69,7 @@
         self.result = kTriviaResultWrong;
     }
     
-    [self performSegueWithIdentifier:@"result" sender:nil];
+    [self performSegueWithIdentifier:@"result" sender:label.text];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -79,6 +79,7 @@
         ETTriviaResultViewController* vc = segue.destinationViewController;
         vc.result = self.result;
         vc.question = self.question;
+        vc.answer = sender;
     }
 }
 
@@ -112,6 +113,13 @@
         label.text = arr[i-1];
     }
 }
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+}
+
 
 - (void) viewDidAppear:(BOOL)animated
 {

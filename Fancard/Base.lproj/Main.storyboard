@@ -900,6 +900,8 @@ after 6 seconds on “TriviaStart” ?</string>
     </scenes>
     <resources>
         <image name="Arrow" width="9" height="15"/>
+        <image name="Arrow" width="9" height="15"/>
+        <image name="Arrow" width="9" height="15"/>
         <image name="home_background.jpg" width="320" height="416"/>
         <image name="index_background.jpg" width="320" height="480"/>
         <image name="index_box_background" width="258" height="95"/>
@@ -908,6 +910,7 @@ after 6 seconds on “TriviaStart” ?</string>
         <image name="reg_box" width="265" height="198"/>
         <image name="reg_camera" width="22" height="17"/>
         <image name="reg_facebook" width="243" height="48"/>
+        <image name="signin_box" width="263" height="101"/>
         <image name="signin_box" width="263" height="101"/>
         <image name="trivia_background.jpg" width="320" height="416"/>
     </resources>

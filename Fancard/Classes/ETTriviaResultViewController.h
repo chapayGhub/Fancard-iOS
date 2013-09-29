@@ -13,6 +13,7 @@
 
 @property (nonatomic, assign)           ETTriviaResult  result;
 @property (nonatomic, strong)           ETQuestion*     question;
+@property (nonatomic, strong)           NSString*       answer;
 @property (nonatomic, weak) IBOutlet    UIImageView*    background;
 @property (nonatomic, weak)             UISwipeGestureRecognizer* swipe;
 @end

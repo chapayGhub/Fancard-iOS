@@ -14,6 +14,6 @@
 @property (nonatomic, weak) IBOutlet    UITableView*        tableView;
 @property (nonatomic, weak) UILabel*                        leftLabel;
 @property (nonatomic, weak) UILabel*                        rightLabel;
-
+@property (nonatomic, assign)           BOOL                todayRank;
 
 @end

@@ -10,6 +10,7 @@
 #import "UIImage+UIColor.h"
 #import <UIColor+Expanded.h>
 #import "ETRankCell.h"
+#import "ETGlobal.h"
 @implementation ETRankViewController
 
 #pragma mark - UIViewController LifeCycle
@@ -54,10 +55,14 @@
         self.rightLabel = label;
     }
     
-    self.leftLabel.text = @"#37";
+    self.leftLabel.text = @"#0";
     self.rightLabel.text = @"20 pts.";
 }
 
+- (void) refreshData
+{
+    
+}
 
 - (void)viewDidLoad
 {
@@ -70,13 +75,19 @@
     }
     else
         self.wantsFullScreenLayout = YES;
+    
+    self.todayRank = NO;
+    
 }
 
 #pragma mark - UITableView DataSource
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    if (self.todayRank)
+        return [ETGlobal sharedGlobal].todayRank.count;
+    else
+        return [ETGlobal sharedGlobal].totalRank.count;
 }
 
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

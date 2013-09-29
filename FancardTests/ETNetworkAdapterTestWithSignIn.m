@@ -21,7 +21,7 @@
     
     __block BOOL flag = true;
     [adapter loginWithUsername:@"txx"
-                      password:@"12345"
+                      password:@"123"
                        success:^(AFHTTPRequestOperation *operation, id responseObject) {
                            NSArray* tmp = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
                            XCTAssertTrue(tmp.count!=0, @"No cookie found");

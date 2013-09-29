@@ -11,6 +11,9 @@
 #import <UIColor+Expanded.h>
 #import "ETRightNavigationBtn.h"
 #import "ETTriviaAnswerViewController.h"
+#import "ETNetworkAdapter.h"
+#import <MBProgressHUD.h>
+
 @implementation ETTriviaQuestionViewController
 
 - (void) setRightBtnWithString:(NSString*) str
@@ -93,6 +96,12 @@
                                                  repeats:YES];
 }
 
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+}
+
 - (void) update
 {
     _remainTime --;
@@ -116,12 +125,27 @@
 }
 - (void)viewDidLoad
 {
-    self.question = [[ETQuestion alloc] init];
-    self.question.question = @"The Question displays here for the fist 6 seconds of the countdown?";
-    self.question.rightAns = @"Use";
-    self.question.wrongAns1 = @"Two Lines Of Text";
-    self.question.wrongAns2 = @"When Needed";
+    MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Getting a Quiz";
     
+    [[ETNetworkAdapter sharedAdapter] getNewQuizWithsuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [hud setHidden:YES];
+        self.question = [[ETQuestion alloc] initWithJsonData:responseObject];
+        self.questionView.text = self.question.question;
+    }
+                                                    failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                        if (operation.response.statusCode == 404)
+                                                        {
+                                                            hud.mode = MBProgressHUDModeText;
+                                                            hud.labelText = @"No more questions";
+                                                            [hud hide:YES afterDelay:1];
+                                                            double delayInSeconds = 1.0;
+                                                            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                                                            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                                [self dismissViewControllerAnimated:YES completion:Nil];
+                                                            });
+                                                        }
+                                                    }];
     [super viewDidLoad];
     self.questionView.font = [UIFont fontWithName:kDefaultFont size:42];
     

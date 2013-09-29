@@ -80,7 +80,7 @@
 {
     __block BOOL flag = true;
     [adapter answerQuestionWithQuestionID:1
-                                   answer:@"b"
+                                   answer:@"3"
                                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                       
                                       NSDictionary* dict = [responseObject objectFromJSONData];
