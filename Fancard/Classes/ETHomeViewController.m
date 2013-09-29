@@ -19,7 +19,7 @@
 - (void) requestAllFin
 {
     [self.hud hide:YES];
-    [self performSegueWithIdentifier:@"practice" sender:nil];
+    self.tabBarController.selectedIndex = 3;
 }
 
 - (void) getAllVideos
@@ -100,6 +100,11 @@
         [ETGlobal sharedGlobal].allVideos = [NSMutableArray array];
         self.requestCnt ++;
         [self getAllVideos];
+    }
+    
+    if (!self.hud)
+    {
+        self.tabBarController.selectedIndex = 3;
     }
 }
 - (void) rightBtnClick

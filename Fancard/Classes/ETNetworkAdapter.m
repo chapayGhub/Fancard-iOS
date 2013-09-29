@@ -9,7 +9,7 @@
 #import "ETNetworkAdapter.h"
 
 static ETNetworkAdapter* _sharedAdapter = nil;
-#define kServerBasedURL @"http://starlinet.com/Fancard/index.php"
+#define kServerBasedURL @"http://localhost:8888/fancard/index.php"//@"http://starlinet.com/Fancard/index.php"
 
 @implementation ETNetworkAdapter
 

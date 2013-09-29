@@ -68,6 +68,9 @@
                             <state key="normal">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="challengeBtnClick:" destination="1" eventType="touchUpInside" id="3Aw-bB-1Fd"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -91,6 +94,9 @@
                     <state key="normal" image="practice_play">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="playBtnClick:" destination="1" eventType="touchUpInside" id="Nor-G3-NwV"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEALTH TIP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vS7-cU-mLO">
                     <rect key="frame" x="130" y="328" width="74" height="16"/>

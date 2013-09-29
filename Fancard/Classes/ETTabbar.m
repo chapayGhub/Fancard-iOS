@@ -27,8 +27,17 @@
     self.avatarView.image = [ETGlobal sharedGlobal].avatar;
     [self refreshTabbarScore];
     
-    
+    [[ETGlobal sharedGlobal] addObserver:self
+                              forKeyPath:@"userPointsTotal"
+                                 options:NSKeyValueObservingOptionNew
+                                 context:nil];
 }
+
+- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    [self refreshTabbarScore];
+}
+
 
 - (void) refreshTabbarScore
 {
@@ -57,5 +66,10 @@
     {
         self.middleBtnClickBlock();
     }
+}
+
+- (void) dealloc
+{
+    [[ETGlobal sharedGlobal] removeObserver:self forKeyPath:@"userPointsTotal"];
 }
 @end

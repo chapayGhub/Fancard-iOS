@@ -230,6 +230,7 @@
                         <segue destination="15X-jF-87j" kind="relationship" relationship="viewControllers" id="LKa-zu-H1d"/>
                         <segue destination="jlN-uR-T0F" kind="relationship" relationship="viewControllers" id="i9C-yd-YdC"/>
                         <segue destination="s4y-3N-djy" kind="relationship" relationship="viewControllers" id="O2d-IS-vKu"/>
+                        <segue destination="Ys9-wW-IHs" kind="relationship" relationship="viewControllers" id="6hU-06-jZB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lR2-Fv-viP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -415,7 +416,6 @@
                         <outlet property="viewGroup2" destination="5qu-nC-IP9" id="oS4-5o-mH6"/>
                         <outlet property="viewGroup3" destination="C6V-Ib-flE" id="z2P-Nm-nYf"/>
                         <segue destination="seD-OV-GCE" kind="modal" identifier="signout" id="gMZ-r8-pFi"/>
-                        <segue destination="Ys9-wW-IHs" kind="modal" identifier="practice" id="bp8-z2-It2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEK-KU-oVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -467,10 +467,11 @@
             </objects>
             <point key="canvasLocation" x="1254" y="-1681"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Item-->
         <scene sceneID="wHk-RW-a95">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Ys9-wW-IHs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="R1x-jH-jdL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XAa-LG-zqK">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -480,7 +481,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aht-dB-IQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="-962"/>
+            <point key="canvasLocation" x="-167" y="-74"/>
         </scene>
         <!--Practice View Controller-->
         <scene sceneID="8mM-Nq-cbX">
@@ -499,13 +500,102 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="NrX-Xe-MJc"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="scrollView" destination="c5J-cU-5Le" id="6GY-kO-Ure"/>
+                        <segue destination="74G-Dl-BR6" kind="push" identifier="confirm" id="ayh-fg-OQ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLi-ZP-agL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1254" y="-962"/>
+            <point key="canvasLocation" x="321" y="-74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X4f-Th-LhO">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="rnB-4A-6Mk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u5o-UX-pFb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aat-md-Kun" kind="relationship" relationship="rootViewController" id="Hnz-VY-RIp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lC9-iJ-6YJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="711"/>
+        </scene>
+        <!--Practice Confrim1 View Controller-->
+        <scene sceneID="zCD-3Q-BEi">
+            <objects>
+                <viewController id="74G-Dl-BR6" customClass="ETPracticeConfrim1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJf-nK-SzK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="practice_confirm1.jpg" id="ghE-Qd-K3S">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qNq-2O-T1t"/>
+                    <connections>
+                        <outlet property="imageView" destination="ghE-Qd-K3S" id="FFF-wd-gAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fh7-na-hPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="-74"/>
+        </scene>
+        <!--Practice Confrim2 View Controller-->
+        <scene sceneID="uLz-Ey-hdz">
+            <objects>
+                <viewController storyboardIdentifier="ETPracticeConfrim2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aat-md-Kun" customClass="ETPracticeConfrim2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dm-Hy-bHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="practice_confirm2.jpg" id="MLi-fE-jee">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pxM-8Z-Gcm"/>
+                    <connections>
+                        <outlet property="imageView" destination="MLi-fE-jee" id="dhX-dO-CLB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEM-I4-Td0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="-74"/>
+        </scene>
+        <!--Practice Confrim3 View Controller-->
+        <scene sceneID="Q88-I7-9b7">
+            <objects>
+                <viewController storyboardIdentifier="ETPracticeConfrim3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ayB-Ky-1Dz" customClass="ETPracticeConfrim3ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="INm-iQ-y3R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="practice_confirm3.jpg" id="dK9-vn-cIg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SR7-SG-rdb"/>
+                    <connections>
+                        <outlet property="imageView" destination="dK9-vn-cIg" id="ABA-UP-e6t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUZ-TH-zhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="-74"/>
         </scene>
         <!--Trivia Answer View Controller-->
         <scene sceneID="A07-eZ-e8g">
@@ -952,6 +1042,9 @@ after 6 seconds on “TriviaStart” ?</string>
         <image name="index_box_background" width="258" height="95"/>
         <image name="index_register_logo" width="22" height="24"/>
         <image name="index_signin_logo" width="22" height="24"/>
+        <image name="practice_confirm1.jpg" width="320" height="416"/>
+        <image name="practice_confirm2.jpg" width="320" height="416"/>
+        <image name="practice_confirm3.jpg" width="320" height="416"/>
         <image name="reg_box" width="265" height="198"/>
         <image name="reg_camera" width="22" height="17"/>
         <image name="reg_facebook" width="243" height="48"/>
@@ -964,8 +1057,8 @@ after 6 seconds on “TriviaStart” ?</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HKi-7Y-gSb"/>
-        <segue reference="dTb-DG-hyU"/>
         <segue reference="Lip-PR-cmT"/>
+        <segue reference="dTb-DG-hyU"/>
+        <segue reference="HKi-7Y-gSb"/>
     </inferredMetricsTieBreakers>
 </document>

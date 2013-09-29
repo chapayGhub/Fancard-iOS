@@ -16,7 +16,7 @@
     UIView* view = self.navigationController.navigationBar;
     [[view viewWithTag:10
 ] removeFromSuperview];
-    
+    if (!str) return;
     ETLeftNavigationBtn* btn = [[NSBundle mainBundle] loadNibNamed:@"ETLeftNavigationBtn"
                                                              owner:self
                                                            options:nil][0];
@@ -38,7 +38,7 @@
 {
     UIView* view = self.navigationController.navigationBar;
     [[view viewWithTag:11] removeFromSuperview];
-    
+    if (!str) return;
     ETRightNavigationBtn* btn = [[NSBundle mainBundle] loadNibNamed:@"ETRightNavigationBtn"
                                                               owner:self
                                                             options:nil][0];

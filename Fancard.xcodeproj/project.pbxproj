@@ -56,6 +56,23 @@
 		ADC47DAE17ED186700322A47 /* ETBasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DAD17ED186700322A47 /* ETBasedViewController.m */; };
 		ADC47DB117ED195000322A47 /* ETRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC47DB017ED195000322A47 /* ETRegisterViewController.m */; };
 		ADD6D2D317F7AA6700B82824 /* ETGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2D217F7AA6700B82824 /* ETGlobal.m */; };
+		ADD6D2D617F7D30E00B82824 /* ETPracticeInnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2D517F7D30E00B82824 /* ETPracticeInnerView.xib */; };
+		ADD6D2D917F7D70300B82824 /* ETPracticeInnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2D817F7D70300B82824 /* ETPracticeInnerView.m */; };
+		ADD6D2DC17F7DD3300B82824 /* ETPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2DB17F7DD3300B82824 /* ETPracticeViewController.m */; };
+		ADD6D2DE17F7EDEE00B82824 /* ETPracticeInnerView_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2DD17F7EDEE00B82824 /* ETPracticeInnerView_iPhone5.xib */; };
+		ADD6D2E117F7F38B00B82824 /* ETVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2E017F7F38B00B82824 /* ETVideo.m */; };
+		ADD6D2EB17F80E2B00B82824 /* practice_confirm2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E217F80E2B00B82824 /* practice_confirm2.jpg */; };
+		ADD6D2EC17F80E2B00B82824 /* practice_confirm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E317F80E2B00B82824 /* practice_confirm1.jpg */; };
+		ADD6D2ED17F80E2B00B82824 /* practice_confirm3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E417F80E2B00B82824 /* practice_confirm3.jpg */; };
+		ADD6D2EE17F80E2B00B82824 /* practice_confirm2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E517F80E2B00B82824 /* practice_confirm2@2x.jpg */; };
+		ADD6D2EF17F80E2B00B82824 /* practice_confirm2@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E617F80E2B00B82824 /* practice_confirm2@2x~568.jpg */; };
+		ADD6D2F017F80E2B00B82824 /* practice_confirm3@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E717F80E2B00B82824 /* practice_confirm3@2x~568.jpg */; };
+		ADD6D2F117F80E2B00B82824 /* practice_confirm1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E817F80E2B00B82824 /* practice_confirm1@2x.jpg */; };
+		ADD6D2F217F80E2B00B82824 /* practice_confirm3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2E917F80E2B00B82824 /* practice_confirm3@2x.jpg */; };
+		ADD6D2F317F80E2B00B82824 /* practice_confirm1@2x~568.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD6D2EA17F80E2B00B82824 /* practice_confirm1@2x~568.jpg */; };
+		ADD6D2F617F80EEF00B82824 /* ETPracticeConfrim1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2F517F80EEF00B82824 /* ETPracticeConfrim1ViewController.m */; };
+		ADD6D2F917F810D500B82824 /* ETPracticeConfrim2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2F817F810D500B82824 /* ETPracticeConfrim2ViewController.m */; };
+		ADD6D2FC17F811C000B82824 /* ETPracticeConfrim3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2FB17F811C000B82824 /* ETPracticeConfrim3ViewController.m */; };
 		ADD9675417F276F300540975 /* ETStoreInnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9675317F276F300540975 /* ETStoreInnerView.m */; };
 		ADD9675617F2770F00540975 /* ETStoreInnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675517F2770F00540975 /* ETStoreInnerView.xib */; };
 		ADD9675917F2797E00540975 /* Franchise-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675817F2797E00540975 /* Franchise-Bold.ttf */; };
@@ -162,6 +179,29 @@
 		ADC47DB017ED195000322A47 /* ETRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETRegisterViewController.m; path = Classes/ETRegisterViewController.m; sourceTree = "<group>"; };
 		ADD6D2D117F7AA6700B82824 /* ETGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETGlobal.h; path = Classes/ETGlobal.h; sourceTree = "<group>"; };
 		ADD6D2D217F7AA6700B82824 /* ETGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETGlobal.m; path = Classes/ETGlobal.m; sourceTree = "<group>"; };
+		ADD6D2D517F7D30E00B82824 /* ETPracticeInnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETPracticeInnerView.xib; path = xib/ETPracticeInnerView.xib; sourceTree = "<group>"; };
+		ADD6D2D717F7D70300B82824 /* ETPracticeInnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETPracticeInnerView.h; path = Classes/ETPracticeInnerView.h; sourceTree = "<group>"; };
+		ADD6D2D817F7D70300B82824 /* ETPracticeInnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETPracticeInnerView.m; path = Classes/ETPracticeInnerView.m; sourceTree = "<group>"; };
+		ADD6D2DA17F7DD3300B82824 /* ETPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETPracticeViewController.h; path = Classes/ETPracticeViewController.h; sourceTree = "<group>"; };
+		ADD6D2DB17F7DD3300B82824 /* ETPracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETPracticeViewController.m; path = Classes/ETPracticeViewController.m; sourceTree = "<group>"; };
+		ADD6D2DD17F7EDEE00B82824 /* ETPracticeInnerView_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETPracticeInnerView_iPhone5.xib; path = xib/ETPracticeInnerView_iPhone5.xib; sourceTree = "<group>"; };
+		ADD6D2DF17F7F38B00B82824 /* ETVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETVideo.h; path = Classes/ETVideo.h; sourceTree = "<group>"; };
+		ADD6D2E017F7F38B00B82824 /* ETVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETVideo.m; path = Classes/ETVideo.m; sourceTree = "<group>"; };
+		ADD6D2E217F80E2B00B82824 /* practice_confirm2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = practice_confirm2.jpg; sourceTree = "<group>"; };
+		ADD6D2E317F80E2B00B82824 /* practice_confirm1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = practice_confirm1.jpg; sourceTree = "<group>"; };
+		ADD6D2E417F80E2B00B82824 /* practice_confirm3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = practice_confirm3.jpg; sourceTree = "<group>"; };
+		ADD6D2E517F80E2B00B82824 /* practice_confirm2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "practice_confirm2@2x.jpg"; sourceTree = "<group>"; };
+		ADD6D2E617F80E2B00B82824 /* practice_confirm2@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "practice_confirm2@2x~568.jpg"; sourceTree = "<group>"; };
+		ADD6D2E717F80E2B00B82824 /* practice_confirm3@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "practice_confirm3@2x~568.jpg"; sourceTree = "<group>"; };
+		ADD6D2E817F80E2B00B82824 /* practice_confirm1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "practice_confirm1@2x.jpg"; sourceTree = "<group>"; };
+		ADD6D2E917F80E2B00B82824 /* practice_confirm3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "practice_confirm3@2x.jpg"; sourceTree = "<group>"; };
+		ADD6D2EA17F80E2B00B82824 /* practice_confirm1@2x~568.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "practice_confirm1@2x~568.jpg"; sourceTree = "<group>"; };
+		ADD6D2F417F80EEF00B82824 /* ETPracticeConfrim1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETPracticeConfrim1ViewController.h; path = Classes/ETPracticeConfrim1ViewController.h; sourceTree = "<group>"; };
+		ADD6D2F517F80EEF00B82824 /* ETPracticeConfrim1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETPracticeConfrim1ViewController.m; path = Classes/ETPracticeConfrim1ViewController.m; sourceTree = "<group>"; };
+		ADD6D2F717F810D500B82824 /* ETPracticeConfrim2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETPracticeConfrim2ViewController.h; path = Classes/ETPracticeConfrim2ViewController.h; sourceTree = "<group>"; };
+		ADD6D2F817F810D500B82824 /* ETPracticeConfrim2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETPracticeConfrim2ViewController.m; path = Classes/ETPracticeConfrim2ViewController.m; sourceTree = "<group>"; };
+		ADD6D2FA17F811C000B82824 /* ETPracticeConfrim3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETPracticeConfrim3ViewController.h; path = Classes/ETPracticeConfrim3ViewController.h; sourceTree = "<group>"; };
+		ADD6D2FB17F811C000B82824 /* ETPracticeConfrim3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETPracticeConfrim3ViewController.m; path = Classes/ETPracticeConfrim3ViewController.m; sourceTree = "<group>"; };
 		ADD9675217F276F300540975 /* ETStoreInnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETStoreInnerView.h; path = Classes/ETStoreInnerView.h; sourceTree = "<group>"; };
 		ADD9675317F276F300540975 /* ETStoreInnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETStoreInnerView.m; path = Classes/ETStoreInnerView.m; sourceTree = "<group>"; };
 		ADD9675517F2770F00540975 /* ETStoreInnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETStoreInnerView.xib; path = xib/ETStoreInnerView.xib; sourceTree = "<group>"; };
@@ -243,6 +283,8 @@
 				ADD9675317F276F300540975 /* ETStoreInnerView.m */,
 				ADD9676317F29CD700540975 /* ETRankCell.h */,
 				ADD9676417F29CD700540975 /* ETRankCell.m */,
+				ADD6D2D717F7D70300B82824 /* ETPracticeInnerView.h */,
+				ADD6D2D817F7D70300B82824 /* ETPracticeInnerView.m */,
 			);
 			name = ModelView;
 			sourceTree = "<group>";
@@ -254,6 +296,8 @@
 				AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */,
 				AD32455917F259DA0092469F /* ETTabbar.xib */,
 				ADD9675517F2770F00540975 /* ETStoreInnerView.xib */,
+				ADD6D2D517F7D30E00B82824 /* ETPracticeInnerView.xib */,
+				ADD6D2DD17F7EDEE00B82824 /* ETPracticeInnerView_iPhone5.xib */,
 			);
 			name = XIB;
 			sourceTree = "<group>";
@@ -272,6 +316,8 @@
 			children = (
 				AD98881717F3766F00EA3E0B /* ETQuestion.h */,
 				AD98881817F3766F00EA3E0B /* ETQuestion.m */,
+				ADD6D2DF17F7F38B00B82824 /* ETVideo.h */,
+				ADD6D2E017F7F38B00B82824 /* ETVideo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -315,6 +361,14 @@
 				AD98882617F387CA00EA3E0B /* ETTriviaAnswerViewController.m */,
 				AD98882817F38DC300EA3E0B /* ETTriviaResultViewController.h */,
 				AD98882917F38DC300EA3E0B /* ETTriviaResultViewController.m */,
+				ADD6D2DA17F7DD3300B82824 /* ETPracticeViewController.h */,
+				ADD6D2DB17F7DD3300B82824 /* ETPracticeViewController.m */,
+				ADD6D2F417F80EEF00B82824 /* ETPracticeConfrim1ViewController.h */,
+				ADD6D2F517F80EEF00B82824 /* ETPracticeConfrim1ViewController.m */,
+				ADD6D2F717F810D500B82824 /* ETPracticeConfrim2ViewController.h */,
+				ADD6D2F817F810D500B82824 /* ETPracticeConfrim2ViewController.m */,
+				ADD6D2FA17F811C000B82824 /* ETPracticeConfrim3ViewController.h */,
+				ADD6D2FB17F811C000B82824 /* ETPracticeConfrim3ViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +398,15 @@
 				AD98883117F390C500EA3E0B /* trivia_result_lose@2x~568.jpg */,
 				AD98883217F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg */,
 				AD98883317F390C500EA3E0B /* trivia_result_win@2x~568.jpg */,
+				ADD6D2E217F80E2B00B82824 /* practice_confirm2.jpg */,
+				ADD6D2E317F80E2B00B82824 /* practice_confirm1.jpg */,
+				ADD6D2E417F80E2B00B82824 /* practice_confirm3.jpg */,
+				ADD6D2E517F80E2B00B82824 /* practice_confirm2@2x.jpg */,
+				ADD6D2E617F80E2B00B82824 /* practice_confirm2@2x~568.jpg */,
+				ADD6D2E717F80E2B00B82824 /* practice_confirm3@2x~568.jpg */,
+				ADD6D2E817F80E2B00B82824 /* practice_confirm1@2x.jpg */,
+				ADD6D2E917F80E2B00B82824 /* practice_confirm3@2x.jpg */,
+				ADD6D2EA17F80E2B00B82824 /* practice_confirm1@2x~568.jpg */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -514,33 +577,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD6D2EB17F80E2B00B82824 /* practice_confirm2.jpg in Resources */,
+				ADD6D2EC17F80E2B00B82824 /* practice_confirm1.jpg in Resources */,
 				AD32455A17F259DA0092469F /* ETTabbar.xib in Resources */,
 				AD98882417F3828C00EA3E0B /* trivia_background@2x~568.jpg in Resources */,
 				AD98883B17F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg in Resources */,
 				AD98883A17F390C500EA3E0B /* trivia_result_lose@2x~568.jpg in Resources */,
+				ADD6D2D617F7D30E00B82824 /* ETPracticeInnerView.xib in Resources */,
 				AD32454617F1113F0092469F /* Nunito-Regular.ttf in Resources */,
 				AD98883417F390C500EA3E0B /* trivia_result_timeout.jpg in Resources */,
+				ADD6D2F017F80E2B00B82824 /* practice_confirm3@2x~568.jpg in Resources */,
 				AD98883717F390C500EA3E0B /* trivia_result_timeout@2x.jpg in Resources */,
+				ADD6D2F317F80E2B00B82824 /* practice_confirm1@2x~568.jpg in Resources */,
 				AD98883917F390C500EA3E0B /* trivia_result_win@2x.jpg in Resources */,
 				AD32454D17F224120092469F /* home_background.jpg in Resources */,
 				AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */,
+				ADD6D2F217F80E2B00B82824 /* practice_confirm3@2x.jpg in Resources */,
 				AD98883517F390C500EA3E0B /* trivia_result_lose.jpg in Resources */,
 				AD32454E17F224120092469F /* home_background@2x.jpg in Resources */,
 				ADF1874817E5F68300E03EF6 /* InfoPlist.strings in Resources */,
+				ADD6D2F117F80E2B00B82824 /* practice_confirm1@2x.jpg in Resources */,
 				ADD9675617F2770F00540975 /* ETStoreInnerView.xib in Resources */,
 				ADC47DA517ECB32600322A47 /* Images.xcassets in Resources */,
 				ADD9675D17F27DA300540975 /* store_box@2x.jpg in Resources */,
+				ADD6D2EE17F80E2B00B82824 /* practice_confirm2@2x.jpg in Resources */,
 				AD98883C17F390C500EA3E0B /* trivia_result_win@2x~568.jpg in Resources */,
 				AD98882217F3828C00EA3E0B /* trivia_background.jpg in Resources */,
 				ADC47D9E17ECB0FA00322A47 /* index_background.jpg in Resources */,
+				ADD6D2ED17F80E2B00B82824 /* practice_confirm3.jpg in Resources */,
 				AD32454517F1113F0092469F /* AccidentalPresidency.ttf in Resources */,
 				AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */,
 				AD98883817F390C500EA3E0B /* trivia_result_lose@2x.jpg in Resources */,
 				ADF1875117E5F68300E03EF6 /* Main.storyboard in Resources */,
+				ADD6D2DE17F7EDEE00B82824 /* ETPracticeInnerView_iPhone5.xib in Resources */,
 				ADC47DA717ECB6D200322A47 /* index_background@2x~568.jpg in Resources */,
 				ADC47D9F17ECB0FA00322A47 /* index_background@2x.jpg in Resources */,
 				AD98881E17F37DC700EA3E0B /* font.ttf in Resources */,
 				AD98883617F390C500EA3E0B /* trivia_result_win.jpg in Resources */,
+				ADD6D2EF17F80E2B00B82824 /* practice_confirm2@2x~568.jpg in Resources */,
 				ADD9675C17F27DA300540975 /* store_box.jpg in Resources */,
 				AD32454F17F224120092469F /* home_background@2x~568.jpg in Resources */,
 				AD98882317F3828C00EA3E0B /* trivia_background@2x.jpg in Resources */,
@@ -601,12 +675,15 @@
 				ADD9675417F276F300540975 /* ETStoreInnerView.m in Sources */,
 				ADC47D9617EC95EF00322A47 /* ETIndexViewController.m in Sources */,
 				AD1FAFF917EE54B500F32557 /* ETSignInViewController.m in Sources */,
+				ADD6D2F917F810D500B82824 /* ETPracticeConfrim2ViewController.m in Sources */,
 				AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */,
+				ADD6D2FC17F811C000B82824 /* ETPracticeConfrim3ViewController.m in Sources */,
 				ADD6D2D317F7AA6700B82824 /* ETGlobal.m in Sources */,
 				ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */,
 				ADD9676217F299DF00540975 /* ETRankViewController.m in Sources */,
 				AD98881917F3766F00EA3E0B /* ETQuestion.m in Sources */,
 				ADC47DB117ED195000322A47 /* ETRegisterViewController.m in Sources */,
+				ADD6D2E117F7F38B00B82824 /* ETVideo.m in Sources */,
 				AD1FB00217F0394500F32557 /* ETTutorialViewController.m in Sources */,
 				AD852C1017EE3A75003EA787 /* ETRightNavigationBtn.m in Sources */,
 				AD32454917F219620092469F /* ETHomeViewController.m in Sources */,
@@ -616,6 +693,9 @@
 				AD98881C17F3791800EA3E0B /* ETTriviaQuestionViewController.m in Sources */,
 				AD32455817F259C70092469F /* ETTabbar.m in Sources */,
 				AD98884117F4CA0500EA3E0B /* ETNetworkAdapter.m in Sources */,
+				ADD6D2D917F7D70300B82824 /* ETPracticeInnerView.m in Sources */,
+				ADD6D2DC17F7DD3300B82824 /* ETPracticeViewController.m in Sources */,
+				ADD6D2F617F80EEF00B82824 /* ETPracticeConfrim1ViewController.m in Sources */,
 				ADC47DAE17ED186700322A47 /* ETBasedViewController.m in Sources */,
 				AD98882A17F38DC300EA3E0B /* ETTriviaResultViewController.m in Sources */,
 				AD32455217F236CD0092469F /* ETStoreViewController.m in Sources */,

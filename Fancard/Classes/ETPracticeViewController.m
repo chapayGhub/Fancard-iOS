@@ -16,7 +16,7 @@
 #import <XCDYouTubeVideoPlayerViewController.h>
 #import "ETNetworkAdapter.h"
 #import <MBProgressHUD.h>
-
+#import "ETPracticeConfrim1ViewController.h"
 @implementation ETPracticeViewController
 
 - (void) viewWillAppear:(BOOL)animated
@@ -67,7 +67,7 @@
         inner.totalPages = len;
         inner.currentPage = i;
         [inner setVideo:[ETGlobal sharedGlobal].allVideos[i]];
-        ETVideo* video = [ETGlobal sharedGlobal].allVideos[i];
+        __weak ETVideo* video = [ETGlobal sharedGlobal].allVideos[i];
         
         __block NSString* identifier = nil;
         NSArray* arr = [[video.video_url componentsSeparatedByString:@"?"][1] componentsSeparatedByString:@"&"];
@@ -80,7 +80,11 @@
             }
         }
         
-
+        [inner setChallangeBtnClickBlock:^{
+            self.video = video;
+            [self performSegueWithIdentifier:@"confirm" sender:nil];
+        }];
+        
         [inner setPlayBtnClickBlock:^{
             __block MBProgressHUD* hud;
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -99,6 +103,7 @@
                                                                     [ETGlobal sharedGlobal].userPointsToday = [ETGlobal sharedGlobal].userPointsToday + t;
                                                                     [ETGlobal sharedGlobal].userPointsTotal = [ETGlobal sharedGlobal].userPointsTotal + t;
                                                                     [ETGlobal sharedGlobal].userNumberWatchedvideo = [ETGlobal sharedGlobal].userNumberWatchedvideo + 1;
+                                                                    [[ETGlobal sharedGlobal].watchedVideos addObject:[NSString stringWithFormat:@"%d", video.video_id]];
                                                                 }
                                                                 [hud hide:YES];
                                                                 
@@ -120,36 +125,14 @@
     if (iOS7)
         self.automaticallyAdjustsScrollViewInsets = NO;
     self.wantsFullScreenLayout = YES;
-    
-    ETTabbar* tabbar = [[NSBundle mainBundle] loadNibNamed:@"ETTabbar" owner:self options:Nil][0];
-    CGRect rect = tabbar.frame;
-    rect.origin.y = self.view.frame.size.height - rect.size.height;
-    tabbar.frame = rect;
-    [self.view addSubview:tabbar];
-    
-    [tabbar setLeftBtnClickBlock:^{
-        UITabBarController* tabbar = [self.storyboard instantiateViewControllerWithIdentifier:@"tarbarViewController"];
-        tabbar.selectedIndex = 0;
-        [self presentViewController:tabbar
-                           animated:NO
-                         completion:nil];
-    }];
-    
-    [tabbar setRightBtnClickBlock:^{
-        UITabBarController* tabbar = [self.storyboard instantiateViewControllerWithIdentifier:@"tarbarViewController"];
-        tabbar.selectedIndex = 2;
-        [self presentViewController:tabbar
-                           animated:NO
-                         completion:nil];
-    }];
-    
-    [tabbar setMiddleBtnClickBlock:^{
-        UITabBarController* tabbar = [self.storyboard instantiateViewControllerWithIdentifier:@"tarbarViewController"];
-        tabbar.selectedIndex = 1;
-        [self presentViewController:tabbar
-                           animated:NO
-                         completion:nil];
-    }];
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"confirm"])
+    {
+        ETPracticeConfrim1ViewController* vc = [segue destinationViewController];
+        vc.video = self.video;
+    }
+}
 @end

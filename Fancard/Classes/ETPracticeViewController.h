@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ETVideo.h"
 @interface ETPracticeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView*  scrollView;
+@property (nonatomic ,strong)        ETVideo*       video;
 @end
