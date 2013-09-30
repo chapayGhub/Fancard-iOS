@@ -73,7 +73,6 @@
 		ADD6D2F617F80EEF00B82824 /* ETPracticeConfrim1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2F517F80EEF00B82824 /* ETPracticeConfrim1ViewController.m */; };
 		ADD6D2F917F810D500B82824 /* ETPracticeConfrim2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2F817F810D500B82824 /* ETPracticeConfrim2ViewController.m */; };
 		ADD6D2FC17F811C000B82824 /* ETPracticeConfrim3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D2FB17F811C000B82824 /* ETPracticeConfrim3ViewController.m */; };
-		ADD6D30117F87C5000B82824 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD6D30017F87C5000B82824 /* FacebookSDK.framework */; };
 		ADD9675417F276F300540975 /* ETStoreInnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9675317F276F300540975 /* ETStoreInnerView.m */; };
 		ADD9675617F2770F00540975 /* ETStoreInnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675517F2770F00540975 /* ETStoreInnerView.xib */; };
 		ADD9675917F2797E00540975 /* Franchise-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADD9675817F2797E00540975 /* Franchise-Bold.ttf */; };
@@ -203,7 +202,6 @@
 		ADD6D2F817F810D500B82824 /* ETPracticeConfrim2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETPracticeConfrim2ViewController.m; path = Classes/ETPracticeConfrim2ViewController.m; sourceTree = "<group>"; };
 		ADD6D2FA17F811C000B82824 /* ETPracticeConfrim3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETPracticeConfrim3ViewController.h; path = Classes/ETPracticeConfrim3ViewController.h; sourceTree = "<group>"; };
 		ADD6D2FB17F811C000B82824 /* ETPracticeConfrim3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETPracticeConfrim3ViewController.m; path = Classes/ETPracticeConfrim3ViewController.m; sourceTree = "<group>"; };
-		ADD6D30017F87C5000B82824 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		ADD9675217F276F300540975 /* ETStoreInnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETStoreInnerView.h; path = Classes/ETStoreInnerView.h; sourceTree = "<group>"; };
 		ADD9675317F276F300540975 /* ETStoreInnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETStoreInnerView.m; path = Classes/ETStoreInnerView.m; sourceTree = "<group>"; };
 		ADD9675517F2770F00540975 /* ETStoreInnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETStoreInnerView.xib; path = xib/ETStoreInnerView.xib; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 				ADF1874217E5F68300E03EF6 /* UIKit.framework in Frameworks */,
 				ADF1873E17E5F68300E03EF6 /* Foundation.framework in Frameworks */,
 				FE7C26FA880941D7A3D81103 /* libPods.a in Frameworks */,
-				ADD6D30117F87C5000B82824 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +435,6 @@
 		ADF1873C17E5F68300E03EF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ADD6D30017F87C5000B82824 /* FacebookSDK.framework */,
 				AD98884517F4D05000EA3E0B /* libPods.a */,
 				AD1FAFFE17F035A200F32557 /* MobileCoreServices.framework */,
 				AD1FAFFC17F0359400F32557 /* SystemConfiguration.framework */,
@@ -833,10 +829,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/txx/Desktop/workspace/Fancard,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fancard/Fancard-Prefix.pch";
 				INFOPLIST_FILE = "Fancard/Fancard-Info.plist";
@@ -852,10 +845,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/txx/Desktop/workspace/Fancard,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fancard/Fancard-Prefix.pch";
 				INFOPLIST_FILE = "Fancard/Fancard-Info.plist";

@@ -10,7 +10,7 @@
 #import "UIImage+UIColor.h"
 #import "ETNetworkAdapter.h"
 #import <MBProgressHUD.h>
-#import <FacebookSDK/FacebookSDK.h>
+#import <Facebook.h>
 #import "ETAppDelegate.h"
 @implementation ETRegisterViewController
 
