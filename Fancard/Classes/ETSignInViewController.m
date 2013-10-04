@@ -67,7 +67,6 @@
 {
     [[ETNetworkAdapter sharedAdapter] getInfoWithsuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary* dict = [responseObject objectFromJSONData];
-        [ETGlobal sharedGlobal].userName = dict[@"user_name"];
         [ETGlobal sharedGlobal].userPointsTotal = [dict[@"user_points_total"] intValue];
         [ETGlobal sharedGlobal].userPointsToday = [dict[@"user_points_today"] intValue];
         [ETGlobal sharedGlobal].userNumberCorrectanswer = [dict[@"user_number_correctanswer"] intValue];
@@ -156,6 +155,7 @@
                                                password:self.passwordField.text
                                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                                     [self.hud setLabelText:@"Getting data"];
+                                                    [ETGlobal sharedGlobal].userName = self.usernameField.text;
                                                     self.requestCnt = 3;
                                                     [self getInfo];
                                                     [self getAvatar];

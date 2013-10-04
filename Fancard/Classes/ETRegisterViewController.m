@@ -12,6 +12,7 @@
 #import <MBProgressHUD.h>
 #import <Facebook.h>
 #import "ETAppDelegate.h"
+#import "ETGlobal.h"
 @implementation ETRegisterViewController
 
 - (void) rightBtnClick
@@ -28,14 +29,36 @@
                                                        NSDictionary* dict =[responseObject objectFromJSONData];
                                                        if ([dict[@"msg"] isEqualToString:@"OK"])
                                                        {
-                                                           [hud setMode:MBProgressHUDModeText];
-                                                           [hud setLabelText:@"Successful"];
-                                                           [hud hide:YES afterDelay:1];
-                                                           double delayInSeconds = 1.0;
-                                                           dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-                                                           dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-                                                               [self performSegueWithIdentifier:@"signin" sender:Nil];
-                                                           });
+                                                           
+                                                           [ETGlobal sharedGlobal].avatar = self.avatarImage;
+                                                           [ETGlobal sharedGlobal].userName = self.userName.text;
+                                                           [ETGlobal sharedGlobal].userNumberCorrectanswer = 0;
+                                                           [ETGlobal sharedGlobal].userNumberWatchedvideo = 0;
+                                                           [ETGlobal sharedGlobal].userPointsToday = 0;
+                                                           [ETGlobal sharedGlobal].userPointsTotal = 0;
+                                                           
+                                                           [[ETNetworkAdapter sharedAdapter] getVideoAndQuizStatusWithsuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                               [hud setMode:MBProgressHUDModeText];
+                                                               [hud setLabelText:@"Successful"];
+                                                               [hud hide:YES afterDelay:1];
+                                                               
+                                                               NSDictionary* dict = [responseObject objectFromJSONData];
+                                                               [ETGlobal sharedGlobal].videoUnlockCnt = [dict[@"video_unlock_cnt"] integerValue];
+                                                               [ETGlobal sharedGlobal].quizUnlockCnt = [dict[@"quiz_unlock_cnt"] integerValue];
+                                                               
+                                                               double delayInSeconds = 1.0;
+                                                               dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                                                               dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                                   [self performSegueWithIdentifier:@"signin" sender:Nil];
+                                                               });
+                                                               
+                                                           }
+                                                                                                                      failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                                                                                          NSLog(@"%@", [error localizedDescription]);
+                                                                                                                          [hud setLabelText:@"error"];
+                                                                                                                          [hud hide:1 afterDelay:1];
+                                                                                                                          
+                                                                                                                      }];
                                                        }
                                                        else
                                                        {
@@ -94,7 +117,7 @@
                             
                             self.avatarImage = [UIImage imageWithData:responseObject];
                             [hud hide:YES];
-                            self.cameraLabel.text = @"Photo Add";
+                            self.cameraLabel.text = @"Photo Added";
                             [self checkFin];
                         } failure:^(AFHTTPRequestOperation *operation, NSError *error)
                         {
@@ -285,7 +308,7 @@
                   editingInfo:(NSDictionary *)editingInfo
 {
     self.avatarImage = image;
-    self.cameraLabel.text = @"Photo Add";
+    self.cameraLabel.text = @"Photo Added";
     [self checkFin];
     [picker dismissModalViewControllerAnimated:YES];
 }

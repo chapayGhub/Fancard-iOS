@@ -31,6 +31,7 @@
 {
     if (self.todayRank)
     {
+        NSLog(@"%@", [ETGlobal sharedGlobal].userName);
         for (int i=0; i<[ETGlobal sharedGlobal].todayRank.count; i++) {
             if ([[ETGlobal sharedGlobal].todayRank[i][@"user_name"] isEqualToString:[ETGlobal sharedGlobal].userName])
             {
@@ -60,6 +61,7 @@
 - (void) selectLeft
 {
     self.todayRank = NO;
+    [ETGlobal sharedGlobal].totalRank = nil;
     if ([ETGlobal sharedGlobal].totalRank == nil)
     {
         __block MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -92,6 +94,7 @@
 - (void) selectRight
 {
     self.todayRank = YES;
+    [ETGlobal sharedGlobal].todayRank = nil;
     if ([ETGlobal sharedGlobal].todayRank == nil)
     {
         __block MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -162,7 +165,7 @@
         self.rightLabel = label;
     }
 
-    [self refreshData];
+    [self selectLeft];
 }
 
 - (void)viewDidLoad
@@ -176,8 +179,6 @@
     }
     else
         self.wantsFullScreenLayout = YES;
-    
-    [self selectLeft];
 }
 
 #pragma mark - UITableView DataSource

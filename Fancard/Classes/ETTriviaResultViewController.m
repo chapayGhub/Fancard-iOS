@@ -84,6 +84,12 @@
     MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view
                                               animated:YES];
     [hud setLabelText:@"Sync With Server"];
+    
+    if (!self.answer)
+    {
+        self.answer = [NSString stringWithFormat:@"%d", arc4random()];
+    }
+    
     [[ETNetworkAdapter sharedAdapter] answerQuestionWithQuestionID:[self.question.identifier integerValue]
                                                             answer:self.answer
                                                            success:^(AFHTTPRequestOperation *operation, id responseObject) {

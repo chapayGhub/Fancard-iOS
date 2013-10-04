@@ -23,6 +23,8 @@
 		AD32455517F248B20092469F /* ETTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32455417F248B20092469F /* ETTabbarController.m */; };
 		AD32455817F259C70092469F /* ETTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32455717F259C70092469F /* ETTabbar.m */; };
 		AD32455A17F259DA0092469F /* ETTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD32455917F259DA0092469F /* ETTabbar.xib */; };
+		AD58728117FEF04700EFC39A /* ETLeftNavigationBtn2.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD58728017FEF04700EFC39A /* ETLeftNavigationBtn2.xib */; };
+		AD58728417FEF3E900EFC39A /* ETLeftNavigationBtn2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58728217FEF3E900EFC39A /* ETLeftNavigationBtn2.m */; };
 		AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */; };
 		AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD852C0A17EE34C0003EA787 /* ETLeftNavigationBtn.m */; };
 		AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */; };
@@ -132,6 +134,9 @@
 		AD32455617F259C70092469F /* ETTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTabbar.h; path = Classes/ETTabbar.h; sourceTree = "<group>"; };
 		AD32455717F259C70092469F /* ETTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTabbar.m; path = Classes/ETTabbar.m; sourceTree = "<group>"; };
 		AD32455917F259DA0092469F /* ETTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETTabbar.xib; path = xib/ETTabbar.xib; sourceTree = "<group>"; };
+		AD58728017FEF04700EFC39A /* ETLeftNavigationBtn2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETLeftNavigationBtn2.xib; path = xib/ETLeftNavigationBtn2.xib; sourceTree = "<group>"; };
+		AD58728217FEF3E900EFC39A /* ETLeftNavigationBtn2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETLeftNavigationBtn2.m; path = Classes/ETLeftNavigationBtn2.m; sourceTree = "<group>"; };
+		AD58728317FEF3E900EFC39A /* ETLeftNavigationBtn2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETLeftNavigationBtn2.h; path = Classes/ETLeftNavigationBtn2.h; sourceTree = "<group>"; };
 		AD852C0217EE1984003EA787 /* ETMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETMacro.h; path = Classes/ETMacro.h; sourceTree = "<group>"; };
 		AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETLeftNavigationBtn.xib; path = xib/ETLeftNavigationBtn.xib; sourceTree = "<group>"; };
 		AD852C0917EE34C0003EA787 /* ETLeftNavigationBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETLeftNavigationBtn.h; path = Classes/ETLeftNavigationBtn.h; sourceTree = "<group>"; };
@@ -275,6 +280,8 @@
 				AD852C0617EE2C1F003EA787 /* XIB */,
 				AD852C0917EE34C0003EA787 /* ETLeftNavigationBtn.h */,
 				AD852C0A17EE34C0003EA787 /* ETLeftNavigationBtn.m */,
+				AD58728317FEF3E900EFC39A /* ETLeftNavigationBtn2.h */,
+				AD58728217FEF3E900EFC39A /* ETLeftNavigationBtn2.m */,
 				AD852C0E17EE3A75003EA787 /* ETRightNavigationBtn.h */,
 				AD852C0F17EE3A75003EA787 /* ETRightNavigationBtn.m */,
 				AD32455617F259C70092469F /* ETTabbar.h */,
@@ -293,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */,
+				AD58728017FEF04700EFC39A /* ETLeftNavigationBtn2.xib */,
 				AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */,
 				AD32455917F259DA0092469F /* ETTabbar.xib */,
 				ADD9675517F2770F00540975 /* ETStoreInnerView.xib */,
@@ -588,6 +596,7 @@
 				AD98883417F390C500EA3E0B /* trivia_result_timeout.jpg in Resources */,
 				ADD6D2F017F80E2B00B82824 /* practice_confirm3@2x~568.jpg in Resources */,
 				AD98883717F390C500EA3E0B /* trivia_result_timeout@2x.jpg in Resources */,
+				AD58728117FEF04700EFC39A /* ETLeftNavigationBtn2.xib in Resources */,
 				ADD6D2F317F80E2B00B82824 /* practice_confirm1@2x~568.jpg in Resources */,
 				AD98883917F390C500EA3E0B /* trivia_result_win@2x.jpg in Resources */,
 				AD32454D17F224120092469F /* home_background.jpg in Resources */,
@@ -678,6 +687,7 @@
 				ADD6D2F917F810D500B82824 /* ETPracticeConfrim2ViewController.m in Sources */,
 				AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */,
 				ADD6D2FC17F811C000B82824 /* ETPracticeConfrim3ViewController.m in Sources */,
+				AD58728417FEF3E900EFC39A /* ETLeftNavigationBtn2.m in Sources */,
 				ADD6D2D317F7AA6700B82824 /* ETGlobal.m in Sources */,
 				ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */,
 				ADD9676217F299DF00540975 /* ETRankViewController.m in Sources */,

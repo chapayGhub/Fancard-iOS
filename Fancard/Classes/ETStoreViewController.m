@@ -13,6 +13,53 @@
 
 #define kTotalCnt 6
 @implementation ETStoreViewController
+
+- (void) setRightBtnWithString:(NSString*) str
+{
+    UIView* view = self.navigationController.navigationBar;
+    [[view viewWithTag:11] removeFromSuperview];
+    if (!str) return;
+    ETRightNavigationBtn* btn = [[NSBundle mainBundle] loadNibNamed:@"ETRightNavigationBtn"
+                                                              owner:self
+                                                            options:nil][0];
+    btn.txt = str;
+    CGRect rect = btn.frame;
+    rect.origin.y += 5;
+    rect.origin.x = 320-rect.size.width-5;
+    btn.frame = rect;
+    btn.tag = 11;
+    [view addSubview:btn];
+    [btn setClick:^{
+        [self rightBtnClick];
+    }];
+    self.rightBtn = btn;
+    self.rightBtn.disabled = NO;
+}
+
+- (void) setLeftBtnWithString:(NSString*) str
+{
+    UIView* view = self.navigationController.navigationBar;
+    [[view viewWithTag:10
+      ] removeFromSuperview];
+    if (!str) return;
+    ETLeftNavigationBtn2* btn = [[NSBundle mainBundle] loadNibNamed:@"ETLeftNavigationBtn2"
+                                                             owner:self
+                                                           options:nil][0];
+    btn.txt = str;
+    CGRect rect = btn.frame;
+    rect.origin.y += 5;
+    rect.origin.x += 5;
+    btn.frame = rect;
+    btn.tag = 10;
+    
+    [btn setClick:^{
+        [self leftBtnClick];
+    }];
+    [view addSubview:btn];
+    self.leftBtn = btn;
+    self.leftBtn.disabled = NO;
+}
+
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -32,6 +79,11 @@
                                                         forBarMetrics:UIBarMetricsDefault];
     }
     self.navigationItem.hidesBackButton = YES;
+    
+
+    [self setLeftBtnWithString:@"BACK"];
+    [self setRightBtnWithString:@"NEXT"];
+    [self updateBtnStatus];
 }
 
 - (void)viewDidLoad
@@ -59,8 +111,43 @@
     }
     
     self.scrollView.contentSize = CGSizeMake(x, 0);
-    
+    self.scrollView.delegate = self;
     self.wantsFullScreenLayout = YES;
 }
 
+- (void) rightBtnClick
+{
+    [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x + 320, 0) animated:YES];
+}
+
+- (void) leftBtnClick
+{
+    [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x - 320, 0) animated:YES];
+}
+
+- (void) updateBtnStatus
+{
+    self.leftBtn.disabled = NO;
+    self.rightBtn.disabled = NO;
+    
+    if (self.scrollView.contentOffset.x <= 0)
+    {
+        self.leftBtn.disabled = YES;
+    }
+    
+    if (self.scrollView.contentOffset.x >= self.scrollView.contentSize.width-320)
+    {
+        self.rightBtn.disabled = YES;
+    }
+}
+
+- (void) scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    [self updateBtnStatus];
+}
+
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self updateBtnStatus];
+}
 @end

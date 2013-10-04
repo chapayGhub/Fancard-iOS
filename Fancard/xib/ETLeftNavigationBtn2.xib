@@ -7,12 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="1" customClass="ETRightNavigationBtn">
+        <view contentMode="scaleToFill" id="1" customClass="ETLeftNavigationBtn2">
             <rect key="frame" x="0.0" y="0.0" width="95" height="32"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KGS-3S-pj9">
-                    <rect key="frame" x="7" y="0.0" width="63" height="33"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dmK-hg-r9Q">
+                    <rect key="frame" x="23" y="1" width="63" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="SIGN IN">
@@ -26,22 +26,23 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="clicked:" destination="1" eventType="touchUpInside" id="hWM-kf-L4T"/>
+                        <action selector="clicked:" destination="1" eventType="touchUpInside" id="6dm-Lu-dGQ"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow_normal" id="Ny9-3h-h0n">
-                    <rect key="frame" x="78" y="8" width="9" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left_arrow" id="wFx-4R-FlX">
+                    <rect key="frame" x="6" y="8" width="9" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="btn" destination="KGS-3S-pj9" id="HLK-cU-hql"/>
-                <outlet property="img" destination="Ny9-3h-h0n" id="Hyh-c3-Mjk"/>
+                <outlet property="btn" destination="dmK-hg-r9Q" id="IxK-d1-37k"/>
+                <outlet property="img" destination="wFx-4R-FlX" id="Wg3-gu-HMx"/>
             </connections>
         </view>
     </objects>
     <resources>
-        <image name="right_arrow_normal" width="9" height="16"/>
+        <image name="left_arrow" width="9" height="16"/>
     </resources>
 </document>
