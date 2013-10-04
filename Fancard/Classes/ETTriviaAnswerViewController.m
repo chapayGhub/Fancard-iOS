@@ -11,6 +11,7 @@
 #import "UIImage+UIColor.h"
 #import <UIColor+Expanded.h>
 #import "ETTriviaResultViewController.h"
+#import "SimpleAudioEngine.h"
 @implementation ETTriviaAnswerViewController
 
 - (void) setRightBtnWithString:(NSString*) str
@@ -55,6 +56,7 @@
 
 - (IBAction)  btnClick:(id)sender
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     NSInteger tag = [sender tag];
     NSString* str = [NSString stringWithFormat:@"answer%d", tag];
     UILabel* label = [self valueForKey:str];

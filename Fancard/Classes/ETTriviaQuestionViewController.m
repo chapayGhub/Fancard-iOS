@@ -13,7 +13,7 @@
 #import "ETTriviaAnswerViewController.h"
 #import "ETNetworkAdapter.h"
 #import <MBProgressHUD.h>
-
+#import "SimpleAudioEngine.h"
 @implementation ETTriviaQuestionViewController
 
 - (void) setRightBtnWithString:(NSString*) str
@@ -38,6 +38,7 @@
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self.timer invalidate];
     [self performSegueWithIdentifier:@"answer" sender:nil];
 }
@@ -94,6 +95,7 @@
                                                 selector:@selector(update)
                                                 userInfo:Nil
                                                  repeats:YES];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Crowd_During_Trivia_Question 2.mp3" loop:NO];
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -142,6 +144,7 @@
                                                             double delayInSeconds = 1.0;
                                                             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
                                                             dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                                [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
                                                                 [self dismissViewControllerAnimated:YES completion:Nil];
                                                             });
                                                         }

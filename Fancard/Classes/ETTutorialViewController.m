@@ -7,6 +7,7 @@
 //
 
 #import "ETTutorialViewController.h"
+#import "SimpleAudioEngine.h"
 #define tutorialCnt 5
 
 @implementation ETTutorialViewController
@@ -14,12 +15,13 @@
 #pragma mark - ETBasedViewController Overload
 - (void) leftBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self performSegueWithIdentifier:@"signin" sender:nil];
 }
 
 - (void) rightBtnClick
 {
-    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
 }
 
 - (void) leftSwipeGesture:(UISwipeGestureRecognizer *)gesture
@@ -113,5 +115,11 @@
     {   
         self.pageControl.currentPage = scrollView.contentOffset.x / 320;
     }
-} 
+}
+
+- (void) scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [[SimpleAudioEngine sharedEngine] playEffect:@"Swipe_FloorSqueaks.mp3"];
+}
+
 @end

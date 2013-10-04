@@ -10,6 +10,7 @@
 #import "ETStoreInnerView.h"
 #import "UIImage+UIColor.h"
 #import <UIColor+Expanded.h>
+#import "SimpleAudioEngine.h"
 
 #define kTotalCnt 6
 @implementation ETStoreViewController
@@ -117,11 +118,13 @@
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x + 320, 0) animated:YES];
 }
 
 - (void) leftBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x - 320, 0) animated:YES];
 }
 
@@ -150,4 +153,10 @@
 {
     [self updateBtnStatus];
 }
+
+- (void) scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [[SimpleAudioEngine sharedEngine] playEffect:@"Swipe_FloorSqueaks.mp3"];
+}
+
 @end

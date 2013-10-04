@@ -17,6 +17,7 @@
 #import "ETNetworkAdapter.h"
 #import <MBProgressHUD.h>
 #import "ETPracticeConfrim1ViewController.h"
+#import "SimpleAudioEngine.h"
 @implementation ETPracticeViewController
 - (void) setRightBtnWithString:(NSString*) str
 {
@@ -133,6 +134,7 @@
         
         [inner setChallangeBtnClickBlock:^{
             self.video = video;
+            [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
             [self performSegueWithIdentifier:@"confirm" sender:nil];
         }];
         
@@ -159,6 +161,7 @@
                                                                 [hud hide:YES];
                                                                 
                                                                 XCDYouTubeVideoPlayerViewController* vc =[[XCDYouTubeVideoPlayerViewController alloc] initWithVideoIdentifier:identifier];
+                                                                [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
                                                                 [self presentViewController:vc
                                                                                    animated:YES
                                                                                  completion:nil];
@@ -189,11 +192,13 @@
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x + 320, 0) animated:YES];
 }
 
 - (void) leftBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x - 320, 0) animated:YES];
 }
 
@@ -216,6 +221,11 @@
 - (void) scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     [self updateBtnStatus];
+}
+
+- (void) scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [[SimpleAudioEngine sharedEngine] playEffect:@"Swipe_FloorSqueaks.mp3"];
 }
 
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView

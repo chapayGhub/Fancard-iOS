@@ -9,6 +9,7 @@
 #import "ETIndexViewController.h"
 #import "UIImage+UIColor.h"
 #import <QuartzCore/QuartzCore.h>
+#import "SimpleAudioEngine.h"
 @implementation ETIndexViewController
 
 #pragma mark - UIViewController LifeCycle
@@ -25,6 +26,11 @@
 {
     [super viewWillDisappear:animated];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
 }
 
 - (void)viewDidLoad

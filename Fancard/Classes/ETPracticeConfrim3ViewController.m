@@ -10,6 +10,7 @@
 #import "ETNetworkAdapter.h"
 #import "ETGlobal.h"
 #import <MBProgressHUD.h>
+#import "SimpleAudioEngine.h"
 @implementation ETPracticeConfrim3ViewController
 
 - (void) viewWillAppear:(BOOL)animated
@@ -56,6 +57,7 @@
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [[self navigationController] popToRootViewControllerAnimated:YES];
 }
 

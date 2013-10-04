@@ -11,7 +11,7 @@
 #import <AFNetworking.h>
 #import "ETMacro.h"
 #import "UIImage+UIColor.h"
-
+#import "SimpleAudioEngine.h"
 @implementation ETAppDelegate
 
 - (void) customAppearance
@@ -41,6 +41,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // See if the app has a valid token for the current state.
+    [SimpleAudioEngine sharedEngine];
     return YES;
 }
 							

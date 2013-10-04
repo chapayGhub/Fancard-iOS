@@ -8,6 +8,7 @@
 
 #import "ETTabbarController.h"
 #import "ETTabbar.h"
+#import "SimpleAudioEngine.h"
 @implementation ETTabbarController
 
 - (void) awakeFromNib
@@ -21,14 +22,26 @@
     rect.origin.y = self.view.frame.size.height - rect.size.height;
     tabbar.frame = rect;
     [tabbar setLeftBtnClickBlock:^{
+        if (self.selectedIndex != 0)
+        {
+            [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
+        }
         self.selectedIndex = 0;
     }];
     
     [tabbar setRightBtnClickBlock:^{
+        if (self.selectedIndex != 2)
+        {
+            [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
+        }
         self.selectedIndex = 2;
     }];
     
     [tabbar setMiddleBtnClickBlock:^{
+        if (self.selectedIndex != 1)
+        {
+            [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
+        }
         self.selectedIndex = 1;
     }];
     

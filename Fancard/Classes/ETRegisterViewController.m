@@ -13,10 +13,12 @@
 #import <Facebook.h>
 #import "ETAppDelegate.h"
 #import "ETGlobal.h"
+#import "SimpleAudioEngine.h"
 @implementation ETRegisterViewController
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     __block MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [hud setLabelText:@"Loading..."];
     
@@ -89,6 +91,7 @@
 
 - (IBAction) facebookBtnClick:(id)sender
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     if( ![[FBSession activeSession] isOpen] )
     {
         __block MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -143,6 +146,7 @@
 }
 - (IBAction) cameraBtnClick:(id) sender
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self closeKeyBoard:nil];
     UIActionSheet* actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self
@@ -154,12 +158,12 @@
 
 - (IBAction) privacyPolicyBtnClick:(id)sender
 {
-    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
 }
 
 - (IBAction) termsOfServiceBtnClick:(id) sender
 {
-    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
 }
 
 - (IBAction) closeKeyBoard:(id)sender

@@ -13,7 +13,13 @@
 #import "ETNetworkAdapter.h"
 #import <MBProgressHUD.h>
 #import "ETVideo.h"
+#import "SimpleAudioEngine.h"
 @implementation ETHomeViewController
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
+}
 
 #pragma mark - IBAction
 - (void) requestAllFin
@@ -77,6 +83,7 @@
 }
 - (IBAction) group1BtnClick:(id)sender
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     self.requestCnt = 0;
     self.hud = nil;
     if (![ETGlobal sharedGlobal].watchedVideos)
@@ -109,6 +116,7 @@
 }
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [[[UIAlertView alloc] initWithTitle:@"Attention"
                                 message:@"Are you sure you want to sign out?"
                                delegate:self

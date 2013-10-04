@@ -11,7 +11,7 @@
 #import "ETNetworkAdapter.h"
 #import "ETGlobal.h"
 #import <JSONKit.h>
-
+#import "SimpleAudioEngine.h"
 @implementation ETSignInViewController
 
 - (IBAction) checkDone:(id)sender
@@ -60,7 +60,7 @@
 
 - (IBAction) forgotPwdBtnClick:(id)sender
 {
-    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
 }
 
 - (void) getInfo
@@ -148,6 +148,7 @@
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [hud setLabelText:@"Loading..."];
     self.hud = hud;

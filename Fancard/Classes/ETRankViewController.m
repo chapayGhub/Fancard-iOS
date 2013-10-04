@@ -14,10 +14,11 @@
 
 #import "ETNetworkAdapter.h"
 #import <MBProgressHUD.h>
-
+#import "SimpleAudioEngine.h"
 @implementation ETRankViewController
 - (IBAction) segValueChanged
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     if (self.segControl.selectedSegmentIndex)
     {
         [self selectRight];

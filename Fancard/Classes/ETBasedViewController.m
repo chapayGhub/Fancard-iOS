@@ -9,6 +9,7 @@
 #import "ETBasedViewController.h"
 #import <UIColor+Expanded.h>
 #import "UIImage+UIColor.h"
+#import "SimpleAudioEngine.h"
 @implementation ETBasedViewController
 
 - (void) setLeftBtnWithString:(NSString*) str
@@ -58,16 +59,19 @@
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     NSLog(@"Right Btn Click");
 }
 
 - (void) leftBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void) leftSwipeGesture:(UISwipeGestureRecognizer *)gesture
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"Swipe_FloorSqueaks.mp3"];
     [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma mark - UITableView LifeCycle

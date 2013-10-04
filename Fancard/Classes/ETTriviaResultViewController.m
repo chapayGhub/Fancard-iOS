@@ -11,6 +11,7 @@
 #import <MBProgressHUD.h>
 #import <JSONKit.h>
 #import "ETGlobal.h"
+#import "SimpleAudioEngine.h"
 @implementation ETTriviaResultViewController
 
 - (void) viewWillAppear:(BOOL)animated
@@ -30,6 +31,8 @@
         {
             self.background.image = [UIImage imageNamed:@"trivia_result_win.jpg"];
         }
+        
+        [[SimpleAudioEngine sharedEngine] playEffect:@"Swish_ CorrectAnswer.mp3"];
     }
     
     if (self.result == kTriviaResultTimeOut)
@@ -42,6 +45,8 @@
         {
             self.background.image = [UIImage imageNamed:@"trivia_result_timeout.jpg"];
         }
+        
+        [[SimpleAudioEngine sharedEngine] playEffect:@"incorrect_answer_aww.mp3"];
     }
     
     if (self.result == kTriviaResultWrong)
@@ -54,16 +59,19 @@
         {
             self.background.image = [UIImage imageNamed:@"trivia_result_lose.jpg"];
         }
+        [[SimpleAudioEngine sharedEngine] playEffect:@"incorrect_answer_aww.mp3"];
     }
 }
 
 - (void) rightBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self performSegueWithIdentifier:@"restart" sender:nil];
 }
 
 - (void) leftBtnClick
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"dribble_buttons.mp3"];
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
@@ -74,6 +82,7 @@
 
 - (void) viewDidLoad
 {
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
     [super viewDidLoad];
     UISwipeGestureRecognizer* s = [[UISwipeGestureRecognizer alloc] initWithTarget:self
                                                            action:@selector(rightBtnClick)];

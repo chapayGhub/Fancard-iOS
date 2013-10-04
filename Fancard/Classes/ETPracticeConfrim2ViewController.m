@@ -8,6 +8,7 @@
 
 #import "ETPracticeConfrim2ViewController.h"
 #import "ETPracticeConfrim3ViewController.h"
+#import "SimpleAudioEngine.h"
 #if !TARGET_IPHONE_SIMULATOR
 #define HAS_AVFF 1
 #endif
@@ -104,6 +105,7 @@
                                                 selector:@selector(tick)
                                                 userInfo:nil
                                                  repeats:YES];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"heartbeat 2.mp3"];
 }
 
 - (void) tick

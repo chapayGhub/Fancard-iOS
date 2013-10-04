@@ -25,6 +25,16 @@
 		AD32455A17F259DA0092469F /* ETTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD32455917F259DA0092469F /* ETTabbar.xib */; };
 		AD58728117FEF04700EFC39A /* ETLeftNavigationBtn2.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD58728017FEF04700EFC39A /* ETLeftNavigationBtn2.xib */; };
 		AD58728417FEF3E900EFC39A /* ETLeftNavigationBtn2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58728217FEF3E900EFC39A /* ETLeftNavigationBtn2.m */; };
+		AD58728C17FF0B9B00EFC39A /* Crowd_During_Trivia_Question 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD58728617FF0B9B00EFC39A /* Crowd_During_Trivia_Question 2.mp3 */; };
+		AD58728D17FF0B9B00EFC39A /* dribble_buttons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD58728717FF0B9B00EFC39A /* dribble_buttons.mp3 */; };
+		AD58728E17FF0B9B00EFC39A /* heartbeat 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD58728817FF0B9B00EFC39A /* heartbeat 2.mp3 */; };
+		AD58728F17FF0B9B00EFC39A /* incorrect_answer_aww.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD58728917FF0B9B00EFC39A /* incorrect_answer_aww.mp3 */; };
+		AD58729017FF0B9B00EFC39A /* Swipe_FloorSqueaks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD58728A17FF0B9B00EFC39A /* Swipe_FloorSqueaks.mp3 */; };
+		AD58729117FF0B9B00EFC39A /* Swish_ CorrectAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD58728B17FF0B9B00EFC39A /* Swish_ CorrectAnswer.mp3 */; };
+		AD58729C17FF0DBC00EFC39A /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58729417FF0DBC00EFC39A /* CDAudioManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD58729D17FF0DBC00EFC39A /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58729717FF0DBC00EFC39A /* CDOpenALSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD58729E17FF0DBC00EFC39A /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58729917FF0DBC00EFC39A /* CocosDenshion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD58729F17FF0DBC00EFC39A /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58729B17FF0DBC00EFC39A /* SimpleAudioEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */; };
 		AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD852C0A17EE34C0003EA787 /* ETLeftNavigationBtn.m */; };
 		AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */; };
@@ -137,6 +147,21 @@
 		AD58728017FEF04700EFC39A /* ETLeftNavigationBtn2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETLeftNavigationBtn2.xib; path = xib/ETLeftNavigationBtn2.xib; sourceTree = "<group>"; };
 		AD58728217FEF3E900EFC39A /* ETLeftNavigationBtn2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETLeftNavigationBtn2.m; path = Classes/ETLeftNavigationBtn2.m; sourceTree = "<group>"; };
 		AD58728317FEF3E900EFC39A /* ETLeftNavigationBtn2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETLeftNavigationBtn2.h; path = Classes/ETLeftNavigationBtn2.h; sourceTree = "<group>"; };
+		AD58728617FF0B9B00EFC39A /* Crowd_During_Trivia_Question 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Crowd_During_Trivia_Question 2.mp3"; sourceTree = "<group>"; };
+		AD58728717FF0B9B00EFC39A /* dribble_buttons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dribble_buttons.mp3; sourceTree = "<group>"; };
+		AD58728817FF0B9B00EFC39A /* heartbeat 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "heartbeat 2.mp3"; sourceTree = "<group>"; };
+		AD58728917FF0B9B00EFC39A /* incorrect_answer_aww.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrect_answer_aww.mp3; sourceTree = "<group>"; };
+		AD58728A17FF0B9B00EFC39A /* Swipe_FloorSqueaks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Swipe_FloorSqueaks.mp3; sourceTree = "<group>"; };
+		AD58728B17FF0B9B00EFC39A /* Swish_ CorrectAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Swish_ CorrectAnswer.mp3"; sourceTree = "<group>"; };
+		AD58729317FF0DBC00EFC39A /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
+		AD58729417FF0DBC00EFC39A /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
+		AD58729517FF0DBC00EFC39A /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
+		AD58729617FF0DBC00EFC39A /* CDOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOpenALSupport.h; sourceTree = "<group>"; };
+		AD58729717FF0DBC00EFC39A /* CDOpenALSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOpenALSupport.m; sourceTree = "<group>"; };
+		AD58729817FF0DBC00EFC39A /* CocosDenshion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosDenshion.h; sourceTree = "<group>"; };
+		AD58729917FF0DBC00EFC39A /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
+		AD58729A17FF0DBC00EFC39A /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
+		AD58729B17FF0DBC00EFC39A /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
 		AD852C0217EE1984003EA787 /* ETMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETMacro.h; path = Classes/ETMacro.h; sourceTree = "<group>"; };
 		AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETLeftNavigationBtn.xib; path = xib/ETLeftNavigationBtn.xib; sourceTree = "<group>"; };
 		AD852C0917EE34C0003EA787 /* ETLeftNavigationBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETLeftNavigationBtn.h; path = Classes/ETLeftNavigationBtn.h; sourceTree = "<group>"; };
@@ -274,6 +299,35 @@
 			path = font;
 			sourceTree = "<group>";
 		};
+		AD58728517FF0B9B00EFC39A /* effect */ = {
+			isa = PBXGroup;
+			children = (
+				AD58728617FF0B9B00EFC39A /* Crowd_During_Trivia_Question 2.mp3 */,
+				AD58728717FF0B9B00EFC39A /* dribble_buttons.mp3 */,
+				AD58728817FF0B9B00EFC39A /* heartbeat 2.mp3 */,
+				AD58728917FF0B9B00EFC39A /* incorrect_answer_aww.mp3 */,
+				AD58728A17FF0B9B00EFC39A /* Swipe_FloorSqueaks.mp3 */,
+				AD58728B17FF0B9B00EFC39A /* Swish_ CorrectAnswer.mp3 */,
+			);
+			path = effect;
+			sourceTree = "<group>";
+		};
+		AD58729217FF0DBC00EFC39A /* CocosDenshion */ = {
+			isa = PBXGroup;
+			children = (
+				AD58729317FF0DBC00EFC39A /* CDAudioManager.h */,
+				AD58729417FF0DBC00EFC39A /* CDAudioManager.m */,
+				AD58729517FF0DBC00EFC39A /* CDConfig.h */,
+				AD58729617FF0DBC00EFC39A /* CDOpenALSupport.h */,
+				AD58729717FF0DBC00EFC39A /* CDOpenALSupport.m */,
+				AD58729817FF0DBC00EFC39A /* CocosDenshion.h */,
+				AD58729917FF0DBC00EFC39A /* CocosDenshion.m */,
+				AD58729A17FF0DBC00EFC39A /* SimpleAudioEngine.h */,
+				AD58729B17FF0DBC00EFC39A /* SimpleAudioEngine.m */,
+			);
+			path = CocosDenshion;
+			sourceTree = "<group>";
+		};
 		AD852C0517EE2C17003EA787 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +438,7 @@
 		ADC47D9B17ECB0FA00322A47 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				AD58728517FF0B9B00EFC39A /* effect */,
 				AD32454217F1113F0092469F /* font */,
 				ADC47D9C17ECB0FA00322A47 /* index_background.jpg */,
 				ADC47D9D17ECB0FA00322A47 /* index_background@2x.jpg */,
@@ -458,6 +513,7 @@
 		ADF1874317E5F68300E03EF6 /* Fancard */ = {
 			isa = PBXGroup;
 			children = (
+				AD58729217FF0DBC00EFC39A /* CocosDenshion */,
 				ADF1874C17E5F68300E03EF6 /* ETAppDelegate.h */,
 				ADF1874D17E5F68300E03EF6 /* ETAppDelegate.m */,
 				AD98883E17F4C9E100EA3E0B /* Logic */,
@@ -591,11 +647,14 @@
 				AD98882417F3828C00EA3E0B /* trivia_background@2x~568.jpg in Resources */,
 				AD98883B17F390C500EA3E0B /* trivia_result_timeout@2x~568.jpg in Resources */,
 				AD98883A17F390C500EA3E0B /* trivia_result_lose@2x~568.jpg in Resources */,
+				AD58728C17FF0B9B00EFC39A /* Crowd_During_Trivia_Question 2.mp3 in Resources */,
 				ADD6D2D617F7D30E00B82824 /* ETPracticeInnerView.xib in Resources */,
 				AD32454617F1113F0092469F /* Nunito-Regular.ttf in Resources */,
 				AD98883417F390C500EA3E0B /* trivia_result_timeout.jpg in Resources */,
 				ADD6D2F017F80E2B00B82824 /* practice_confirm3@2x~568.jpg in Resources */,
+				AD58728E17FF0B9B00EFC39A /* heartbeat 2.mp3 in Resources */,
 				AD98883717F390C500EA3E0B /* trivia_result_timeout@2x.jpg in Resources */,
+				AD58729117FF0B9B00EFC39A /* Swish_ CorrectAnswer.mp3 in Resources */,
 				AD58728117FEF04700EFC39A /* ETLeftNavigationBtn2.xib in Resources */,
 				ADD6D2F317F80E2B00B82824 /* practice_confirm1@2x~568.jpg in Resources */,
 				AD98883917F390C500EA3E0B /* trivia_result_win@2x.jpg in Resources */,
@@ -607,6 +666,7 @@
 				ADF1874817E5F68300E03EF6 /* InfoPlist.strings in Resources */,
 				ADD6D2F117F80E2B00B82824 /* practice_confirm1@2x.jpg in Resources */,
 				ADD9675617F2770F00540975 /* ETStoreInnerView.xib in Resources */,
+				AD58728D17FF0B9B00EFC39A /* dribble_buttons.mp3 in Resources */,
 				ADC47DA517ECB32600322A47 /* Images.xcassets in Resources */,
 				ADD9675D17F27DA300540975 /* store_box@2x.jpg in Resources */,
 				ADD6D2EE17F80E2B00B82824 /* practice_confirm2@2x.jpg in Resources */,
@@ -615,6 +675,7 @@
 				ADC47D9E17ECB0FA00322A47 /* index_background.jpg in Resources */,
 				ADD6D2ED17F80E2B00B82824 /* practice_confirm3.jpg in Resources */,
 				AD32454517F1113F0092469F /* AccidentalPresidency.ttf in Resources */,
+				AD58729017FF0B9B00EFC39A /* Swipe_FloorSqueaks.mp3 in Resources */,
 				AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */,
 				AD98883817F390C500EA3E0B /* trivia_result_lose@2x.jpg in Resources */,
 				ADF1875117E5F68300E03EF6 /* Main.storyboard in Resources */,
@@ -626,6 +687,7 @@
 				ADD6D2EF17F80E2B00B82824 /* practice_confirm2@2x~568.jpg in Resources */,
 				ADD9675C17F27DA300540975 /* store_box.jpg in Resources */,
 				AD32454F17F224120092469F /* home_background@2x~568.jpg in Resources */,
+				AD58728F17FF0B9B00EFC39A /* incorrect_answer_aww.mp3 in Resources */,
 				AD98882317F3828C00EA3E0B /* trivia_background@2x.jpg in Resources */,
 				ADD9675F17F2906D00540975 /* store_demo.jpg in Resources */,
 				ADD9675917F2797E00540975 /* Franchise-Bold.ttf in Resources */,
@@ -681,6 +743,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD98882717F387CA00EA3E0B /* ETTriviaAnswerViewController.m in Sources */,
+				AD58729E17FF0DBC00EFC39A /* CocosDenshion.m in Sources */,
+				AD58729F17FF0DBC00EFC39A /* SimpleAudioEngine.m in Sources */,
 				ADD9675417F276F300540975 /* ETStoreInnerView.m in Sources */,
 				ADC47D9617EC95EF00322A47 /* ETIndexViewController.m in Sources */,
 				AD1FAFF917EE54B500F32557 /* ETSignInViewController.m in Sources */,
@@ -690,10 +754,12 @@
 				AD58728417FEF3E900EFC39A /* ETLeftNavigationBtn2.m in Sources */,
 				ADD6D2D317F7AA6700B82824 /* ETGlobal.m in Sources */,
 				ADC47DAA17ECB80700322A47 /* UIImage+UIColor.m in Sources */,
+				AD58729C17FF0DBC00EFC39A /* CDAudioManager.m in Sources */,
 				ADD9676217F299DF00540975 /* ETRankViewController.m in Sources */,
 				AD98881917F3766F00EA3E0B /* ETQuestion.m in Sources */,
 				ADC47DB117ED195000322A47 /* ETRegisterViewController.m in Sources */,
 				ADD6D2E117F7F38B00B82824 /* ETVideo.m in Sources */,
+				AD58729D17FF0DBC00EFC39A /* CDOpenALSupport.m in Sources */,
 				AD1FB00217F0394500F32557 /* ETTutorialViewController.m in Sources */,
 				AD852C1017EE3A75003EA787 /* ETRightNavigationBtn.m in Sources */,
 				AD32454917F219620092469F /* ETHomeViewController.m in Sources */,
