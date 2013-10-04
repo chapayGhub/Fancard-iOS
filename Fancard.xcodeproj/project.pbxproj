@@ -35,6 +35,7 @@
 		AD58729D17FF0DBC00EFC39A /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58729717FF0DBC00EFC39A /* CDOpenALSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD58729E17FF0DBC00EFC39A /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58729917FF0DBC00EFC39A /* CocosDenshion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD58729F17FF0DBC00EFC39A /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AD58729B17FF0DBC00EFC39A /* SimpleAudioEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD5872A117FF1B9000EFC39A /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5872A017FF1B9000EFC39A /* icon.jpg */; };
 		AD852C0817EE2E3F003EA787 /* ETLeftNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */; };
 		AD852C0B17EE34C0003EA787 /* ETLeftNavigationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD852C0A17EE34C0003EA787 /* ETLeftNavigationBtn.m */; };
 		AD852C0D17EE3822003EA787 /* ETRightNavigationBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD852C0C17EE3822003EA787 /* ETRightNavigationBtn.xib */; };
@@ -162,6 +163,7 @@
 		AD58729917FF0DBC00EFC39A /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
 		AD58729A17FF0DBC00EFC39A /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
 		AD58729B17FF0DBC00EFC39A /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
+		AD5872A017FF1B9000EFC39A /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		AD852C0217EE1984003EA787 /* ETMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETMacro.h; path = Classes/ETMacro.h; sourceTree = "<group>"; };
 		AD852C0717EE2E3F003EA787 /* ETLeftNavigationBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ETLeftNavigationBtn.xib; path = xib/ETLeftNavigationBtn.xib; sourceTree = "<group>"; };
 		AD852C0917EE34C0003EA787 /* ETLeftNavigationBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETLeftNavigationBtn.h; path = Classes/ETLeftNavigationBtn.h; sourceTree = "<group>"; };
@@ -477,6 +479,7 @@
 		ADF1873117E5F68300E03EF6 = {
 			isa = PBXGroup;
 			children = (
+				AD5872A017FF1B9000EFC39A /* icon.jpg */,
 				ADC47DA417ECB32500322A47 /* Images.xcassets */,
 				ADF1874317E5F68300E03EF6 /* Fancard */,
 				ADF1876217E5F68400E03EF6 /* FancardTests */,
@@ -681,6 +684,7 @@
 				ADF1875117E5F68300E03EF6 /* Main.storyboard in Resources */,
 				ADD6D2DE17F7EDEE00B82824 /* ETPracticeInnerView_iPhone5.xib in Resources */,
 				ADC47DA717ECB6D200322A47 /* index_background@2x~568.jpg in Resources */,
+				AD5872A117FF1B9000EFC39A /* icon.jpg in Resources */,
 				ADC47D9F17ECB0FA00322A47 /* index_background@2x.jpg in Resources */,
 				AD98881E17F37DC700EA3E0B /* font.ttf in Resources */,
 				AD98883617F390C500EA3E0B /* trivia_result_win.jpg in Resources */,

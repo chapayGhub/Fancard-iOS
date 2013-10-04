@@ -224,7 +224,31 @@
     
     cell.usernameLabel.text = dict[@"user_name"];
     
-    
+    __block NSString* str =[NSTemporaryDirectory() stringByAppendingFormat:@"%@.jpg", dict[@"user_name"]];
+    __block NSIndexPath* index = indexPath;
+    if (![[NSFileManager defaultManager] fileExistsAtPath:str])
+    {
+        [[ETNetworkAdapter sharedAdapter] downloadAvatarWithUserName:dict[@"user_name"]
+                                                             success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                                 NSData* data= responseObject;
+                                                                 
+                                                                 NSLog(@"%@", data);
+                                                                 
+                                                                 [data writeToFile:str atomically:YES];
+                                                                 [self.tableView reloadRowsAtIndexPaths:@[index] withRowAnimation:UITableViewRowAnimationAutomatic];
+                                                             }
+                                                             failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                                 UIImage* image = [UIImage imageNamed:@"icon.jpg"];
+                                                                 [UIImageJPEGRepresentation(image, 1) writeToFile:str
+                                                                                                       atomically:YES];
+                                                                 [self.tableView reloadRowsAtIndexPaths:@[index] withRowAnimation:UITableViewRowAnimationAutomatic];
+                                                             }];
+        cell.avatarView.image = nil;
+    }
+    else
+    {
+        cell.avatarView.image = [UIImage imageWithContentsOfFile:str];
+    }
     return cell;
 }
 
